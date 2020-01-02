@@ -1,0 +1,643 @@
+/* Home CSS-GRID File */
+
+/* STRUCTURE */
+
+#grid {
+    z-index: 10;
+    margin:0px auto 0px auto;
+    width:1040px;
+    height:auto;
+    
+    display: grid;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    grid-template-columns: repeat(5, 170px);
+    grid-auto-rows: 150px 420px 200px 400px 400px 200px;
+    grid-template-areas: 
+    /*   * * * * *     *=200px */
+        "a b b c c c"
+        "d d d d e e"
+        "j j j j j j"
+        "f f f f f f"
+        "h h h g g g"
+        "i i i i i i";
+    
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#a {
+    grid-area: a;    
+}
+
+#b {
+    grid-area: b;
+}
+
+#c {
+    grid-area: c;
+}
+
+#d {
+    grid-area: d;
+}
+
+#e {
+    grid-area: e;
+}
+
+#f {
+    grid-area: f;
+}
+
+#g {
+    grid-area: g;
+}
+
+#h {
+    grid-area: h;
+}
+
+#i {
+    grid-area: i;
+}
+
+#j {
+    grid-area: j;
+}
+
+
+
+
+/* PRESENTATION */
+
+
+body {
+    color:#111;
+    font-family: 'Roboto', sans-serif;
+    
+     background-image:url(../images/newback.jpg);
+    background-position: right center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+     
+}
+
+#tint {
+    background-color: rgb(248, 237, 210, 0.5);
+    background-color: rgb(0,0,0,0.8);
+    
+}
+
+
+#a, #b, #c, #d, #e, #f, #g, #h, #i, #j, #k {
+    z-index: 15;
+}
+
+#a, #b, #c {
+     background-color: rgb(37, 28, 7);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+
+}
+
+#a img {
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+    
+    filter: drop-shadow(1px 1px 0 #6d6e71)
+        drop-shadow(-1px 1px 0 )
+        drop-shadow(1px -1px 0 #6d6e71)
+        drop-shadow(-1px -1px 0 );
+}
+
+#b {
+    padding-top: 30px;
+}
+
+#b h1 {
+    font-size: 32px;
+    font-weight: bolder;
+    color: BLACK;
+    border-bottom: 2px solid #6d6e71;
+    width: 309px;
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+    
+    text-shadow: 1px 1px 1px #6d6e71;
+}
+
+
+
+#b h2 {
+    font-size: 27px;
+    color: #6d6e71;
+    font-weight: bold;
+}
+
+#c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#c ul {
+    width: 100%;
+    padding: 0px;
+}
+
+#c ul li{
+    float: left;
+    margin-right: 15px;
+    padding: 10px;
+    font-size: 15px;
+    width: 22%;
+    font-weight: bold;
+    background-color: #000;
+    text-align: center;
+    border-radius: 10px;
+    color: #6d6e71;
+
+}
+
+#c ul li:hover {
+    background-color: #6d6e71;
+    color: #000;
+}
+
+#d {
+    padding: 5px;
+    background-color: #f8edd2;
+    
+    
+}
+
+#d img {
+    border: 2px solid black;
+}
+
+#e {
+    background-color: #f8edd2;
+    padding: 10px;
+    
+
+}
+
+#e h1 {
+    font-size: 27px;
+    color: black;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    font-variant: small-caps;
+}
+
+#e p, #e ul {
+    background-color: #8E8268;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: justify;
+    text-align-last: right;
+    line-height: 20px;
+}
+
+#f {
+    background-color: #f8edd2;
+    padding: 10px;
+}
+
+#f h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 35px;
+    font-variant: small-caps;
+    color: black;
+    padding: 10px;
+
+}
+
+#f p {
+    background-color: #8E8268;
+    padding: 15px;
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#f hr {
+    margin: 0px auto 20px auto;
+    width: 80%;
+    color: black;
+}
+
+#staff {
+    width: 100%;
+    height: 260px;
+}
+
+.member {
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.headshot {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.headshot img {
+    object-fit: cover;
+    object-position:top;
+    border-radius: 100px;
+    border: 3px solid black;
+
+}
+
+.name {
+    width: 200px;
+    height: 55px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+    font-size: 19px;
+    background-color: #8E8268;
+    border-radius: 10px;
+}
+
+#j {
+    background-image:url(../images/newback.jpg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    
+    border: 5px solid #f8edd2;
+    
+     padding: 15px;
+    color: #AAA0A0;
+    color: #8E8268;
+    text-align: center;
+    font-size: 60px;
+    font-variant: small-caps;
+    font-weight: bolder;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    text-shadow:
+		-2px 1px 2px #000,
+		1px 1px 2px #000,
+		-2px 1px 2px #000,
+		1px 1px 2px #000;
+    
+    box-shadow: inset 0 0 40px #000000;
+}
+
+
+#h {
+    background-image:url(../images/quote.jpg);
+    background-position: right center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    
+    border: 5px solid #f8edd2;
+    padding: 50px;
+    
+    box-shadow: inset 0 0 40px #000000;
+  
+}
+
+#g {
+      background-image:url(../images/background.jpg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    
+    border: 5px solid #f8edd2;
+    
+    padding: 50px;
+    
+    box-shadow: inset 0 0 40px #000000;
+
+}
+
+#h h1, #g h1 {
+    text-align: center;
+    font-size: 30px;
+    background-color: #f8edd2;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    
+    font-variant: small-caps;
+}
+
+#h p, #g p {
+    background-color: rgb(142, 130, 104, 0.8);
+    width: 100%;
+    height: 85%;
+    border-radius: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    font-size: 25px;
+    color: gainsboro;
+}
+
+
+#i {
+   background-color: #003764;
+    padding: 10px;
+    padding-top: 20px;
+    
+    background-color: #251C07;
+}
+
+#social {
+    width: 33%;
+    float: left;
+    height: 100%;
+    padding: 10px;
+    padding-top: 30px;
+    font-size: 18px;
+    margin-right: 10px;
+    text-align: center;
+    
+}
+
+#social h1 {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 22px;
+    color: #6d6e71;
+    margin-bottom: 5px;
+
+}
+
+#social h2 {
+    color: #6d6e71;;
+
+}
+
+#social ul a {
+    padding: 10px;
+     color: black;
+    font-size: 24px;
+}
+
+#social ul a:hover {
+    color: #6d6e71;;
+    font-weight: bold;
+    padding-left: 20px;
+
+}
+
+#copy {
+    width: 32%;
+    float: left;
+    margin-right: 10px;
+    height: 90%;
+    padding: 10px;
+    color: #6d6e71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    text-align: center;
+    font-size: 18px;
+    
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+#copy h1 {
+    font-variant: small-caps;
+    color: #6d6e71;;
+    font-weight: bold;
+    margin-top: 10px;
+    
+    
+}
+
+#designer {
+    width: 30%;
+    float: left;
+    height: 100%;
+    font-size: 18px;
+    padding-top: 18px;
+    margin-left: 20px;
+    
+    font-variant: small-caps;
+}
+
+
+
+#designer h2 {
+    color: rgb(109, 110, 113);
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#designer h2::first-line {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+
+/* Grid Areas
+
+#a {
+    grid-area: a;    
+}
+
+#b {
+    grid-area: b;
+}
+
+#c {
+    grid-area: c;
+}
+
+#d {
+    grid-area: d;
+}
+
+#e {
+    grid-area: e;
+}
+
+#f {
+    grid-area: f;
+}
+
+#g {
+    grid-area: g;
+}
+
+#h {
+    grid-area: h;
+}
+
+#i {
+    grid-area: i;
+}
+
+#j {
+    grid-area: j;
+}
+
+#k {
+    grid-area: k;
+}
+
+#l {
+    grid-area: l;
+}
+
+#m {
+    grid-area: m;
+}
+
+#n {
+    grid-area: n;
+}
+
+#o {
+    grid-area: o;
+}
+
+#p {
+    grid-area: p;
+}
+
+#q {
+    grid-area: q;
+}
+
+#r {
+    grid-area: r;
+}
+
+#s {
+    grid-area: s;
+}
+
+#t {
+    grid-area: t;
+}
+
+#u {
+    grid-area: u;
+}
+
+#v {
+    grid-area: v;
+}
+
+#w {
+    grid-area: w;
+}
+
+#x {
+    grid-area: x;
+}
+
+#y {
+    grid-area: y;
+}
+
+#z {
+    grid-area: z;
+}
+
+*/
+
+/* Color Palette
+
+
+
+*/
+
+/*Vertical Alignment 
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+flex-direction: column ----- Two or more items to vertically allign
+
+*/
+
+/* Google Fonts
+
+font-family: 'Roboto', sans-serif;
+
+*/
+
+/* Full Screen Image
+
+background-image:url(../images/);
+background-position: center center;
+background-repeat:  no-repeat;
+background-attachment: fixed;
+background-size:  cover;
+background-color: #999;
+
+*/
+
+/*  Making a Fullscreen Video Background 
+
+#video-background{
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+*/
+
+/* Individual Side Box Shadows
+
+top {
+  box-shadow: 0px -15px 10px -15px #111;
+}
+bottom {
+  box-shadow: 0px 15px 10px -15px #111;
+}
+left {
+  box-shadow: -15px 0px 10px -15px #111;
+}
+right {
+  box-shadow: 15px 0px 10px -15px #111;
+}
+
+*/

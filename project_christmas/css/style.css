@@ -1,0 +1,434 @@
+/* Project 05 CSS File */
+
+body {
+    color:white;
+    background-color: rgb(75,0,2);
+    font-family: 'Roboto', sans-serif;
+    
+    background-image:url(../images/background.jpg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment:;
+    background-size:  cover;
+}
+
+#container {
+    margin: auto;
+    width: 900px;
+    height: auto;
+    background-color: rgb(50,0,1);
+    
+    box-shadow: 8px 0 8px -4px 	#e8b923, -8px 0 8px -4px #e8b923;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+#header {
+    width: 100%;
+    height: 200px;
+}
+
+#logo {
+    height: 100%;
+    width: 200px;
+    float: left;
+    padding: 20px;
+}
+
+#title {
+    height: 100%;
+    width: 700px;
+    float: left;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    
+    font-family: 'Mountains of Christmas', cursive;
+    
+    font-variant: small-caps;
+    
+    font-size: 4em;
+    font-weight: bolder;
+
+}
+
+#title h1 {
+    margin-bottom: 10px;
+}
+
+#title h2 {
+    color: darkgreen;
+}
+
+
+
+#nav {
+    width: 100%;
+    height: 60px;
+    background-color: #e8b923;
+    border-radius: 0px;
+    border-bottom: 4px solid black;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#nav ul li {
+    display: inline;
+    padding: 6px 20px;
+    margin: 0px 10px;
+    border: 1px solid black;
+    box-shadow: inset 0 0 4px darkgreen;
+
+}
+
+#nav ul li:hover {
+    color: white;
+    background-color: darkgreen;
+    border: 1px solid black;
+}
+
+#slidermain {
+    width: 100%;
+    height: 500px;
+}
+
+#clock {
+    height: 300px;
+    width: 100%;
+    padding: 20px;
+}
+
+#countdown {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    box-shadow: inset 0 0 10px #000000;
+    background-color: rgb(75,0,2);
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+#note {
+    font-size: 30px;
+    word-spacing: 3px;
+    margin-bottom: 30px;
+    color: #e8b923;
+    font-family: 'Nova Square', cursive;
+
+}
+
+#main {
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    
+}
+
+#content {
+    width: 59.6%;
+    height: 100%;
+    float: left;
+    border: 1px solid black;
+    
+    margin-right: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    
+    background-color: rgb(75,0,2);
+     box-shadow: inset 0 0 10px #000000;
+    
+
+}
+
+#content h1 {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: #e8b923;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+
+}
+
+#content p {
+    padding: 5px;
+    color: gainsboro;
+}
+
+#social {
+    width: 38%;
+    float: left;
+    height: 47%;
+    border: 1px solid black;
+    
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    
+    background-color: rgb(75,0,2);
+    box-shadow: inset 0 0 10px #000000;
+
+}
+
+#social h1 {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    color: black;
+    background-color: #e8b923;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-weight: bold;
+
+}
+
+#social a {
+    font-size: 25px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: gainsboro;
+}
+
+.fa-facebook {
+    margin-left: 20px;
+}
+
+.fa:hover {
+  color: darkgreen;
+}
+
+#list {
+    width: 38%;
+    float: left;
+    height: 47%;
+    border: 1px solid black;
+    
+    border-radius: 20px;
+    padding: 10px;
+    
+    background-color: rgb(75,0,2);
+    box-shadow: inset 0 0 10px #000000;
+
+}
+
+#list h1 {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: #e8b923;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    color: black;
+
+}
+
+#list ul {
+    color: gainsboro;
+    margin-left: 20px;
+}
+
+
+#footer {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    border-top: 2px solid #e8b923;
+    
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 25px;
+    font-variant: small-caps;
+}
+
+
+/* BEGIN SLIDER CODE */
+
+#slider {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+}
+
+#slider .slides {
+    width: 3600px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style: none;
+    width: 900px;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+#slidermain ul li {
+    width: 100%;
+    height: 100%;
+}
+
+#slider .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#slider .caption {
+    background-color: rgba(140, 215, 237, 0.44);
+    font-family: sans-serif;
+    width: 720px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    color: #FFF;
+    font-size: .8em;
+    padding-left: 20px;
+    text-transform: none;
+}
+
+/* Directions */
+
+.directions .left {
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+    margin-top: -180px;
+    margin-left: 20px;
+    transform: rotate(-45deg);
+    float: left;
+    cursor: pointer;
+    z-index: 99;
+}
+.directions .right {
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid white;
+    border-right: 4px solid white; 
+    margin-top: -180px;
+    margin-right: 20px;
+    transform: rotate(45deg);
+    float: right;
+    cursor: pointer;
+    z-index: 99;
+}
+/* Bullets */
+.bullets {
+    margin: 5px auto;
+    text-align: center;
+}
+.bullets .bullet {
+    width: 12px;
+    height: 12px;
+    border: 1px solid black; 
+    border-radius: 50%;
+    background-color: #e8b923; 
+    display: inline-block;
+    cursor: pointer;
+}
+.bullets .active,
+.bullets .bullet:hover {
+    background-color: darkgreen;
+}
+
+
+/*END SLIDER CODE*/
+
+/* Google Fonts
+
+font-family: 'Roboto', sans-serif;
+
+*/
+
+
+/*Vertical Alignment 
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+flex-direction: column ----- Two or more items to vertically allign
+
+*/
+
+/* Full Screen Image
+
+background-image:url(../images/);
+background-position: center center;
+background-repeat:  no-repeat;
+background-attachment: fixed;
+background-size:  cover;
+background-color: #999;
+
+*/
+
+/*  Making a Fullscreen Video Background 
+
+#video-background{
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+*/
+
+/* Individual Side Box Shadows
+
+top {
+  box-shadow: 0px -15px 10px -15px #111;
+}
+bottom {
+  box-shadow: 0px 15px 10px -15px #111;
+}
+left {
+  box-shadow: -15px 0px 10px -15px #111;
+}
+right {
+  box-shadow: 15px 0px 10px -15px #111;
+}
+
+*/

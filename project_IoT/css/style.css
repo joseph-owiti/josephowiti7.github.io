@@ -1,0 +1,963 @@
+/* CSIS 345 CSS File */
+
+body {
+    color:#111;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
+    
+        /*font-family: 'Share Tech Mono', monospace;*/
+    
+    font-family: 'Share Tech', sans-serif;
+
+    
+    
+}
+
+
+
+#nav {
+    width: 100%;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-top: 3px solid cyan;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color:black;
+    
+    font-family: 'Share Tech Mono', monospace;
+    
+    
+ 
+}
+
+#smalllogo {
+    width: 30%;
+    height: 100%;
+    display: inline;
+    float: left;
+    padding: 12px;
+    float: left;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+
+
+}
+
+#smalllogo h2 {
+    float:left;
+    margin-right: 5px;
+    color: cyan;
+    font-weight: bold;
+}
+
+#smalllogo h3 {
+    float: left;
+    display: inline;
+    color: cyan;
+}
+
+#smalllogo:hover a p.new-label:after{
+    content: 'Semester Project';
+}
+
+
+
+#menu {
+    width: 70%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 20px;
+    
+    display: flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    text-align: right;
+
+
+
+ 
+}
+
+
+#nav ul {
+    display: inline;
+    float: right;
+    
+}
+
+#nav ul li {
+display: inline;
+    padding: 20px;
+ 
+}
+
+#nav ul li a:hover {
+
+  background-color: cyan;
+  color: black;
+    padding: 20px;
+}
+
+
+#header {
+    width: 100%;
+    height: 500px;
+    background-image:url(../images/picture2.jpg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 60px;
+
+    
+}
+
+#header h1 {
+    font-size: 300px;
+    letter-spacing: 30px;
+    
+    padding-left: 40px;
+    font-weight: bold;
+    text-shadow:
+		-2px -2px 0 cyan,
+		2px -2px 0 cyan,
+		-2px 2px 0 cyan,
+		2px 2px 0 cyan;
+    /*font-family: 'Share Tech', sans-serif;*/
+    border: 3px solid black;
+    font-family: 'Share Tech Mono', monospace;
+    
+    
+}
+
+#team {
+    margin:20px auto 20px auto;
+    width:100%;
+    margin: auto;
+    height:550px;
+    padding:30px;
+}
+
+#teamtitle {
+    
+    height: 100px;
+    color: gainsboro;
+    font-size: 50px;
+    text-align: center; 
+    font-variant: small-caps;
+    margin-bottom: 20px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#members {
+    width: 900px;
+    height: 100%;
+    margin: auto;
+}
+
+#member1, #member2, #member3, #member4 {
+    height: 250px;
+    width: 200px;
+    float: left;
+    margin: 10px;
+    
+}
+
+#pic {
+    width: 100%;
+    height: 100%;
+}
+
+#team img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 900px;
+    border: 3px solid cyan;
+
+}
+
+#name {
+    color:white;
+    padding: 10px;
+    text-align: center; 
+    font-size: 25px;
+    margin-top: -20px;
+
+}
+
+#about {
+    width: 100%;
+    height: 600px;
+    
+    background-image:url(../images/picture3.jpg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+    
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    color: white;
+    opacity: 0.95;
+}
+
+
+
+
+
+#aboutright, #aboutleft, #summarytext, #summarypic {
+    width: 40%;
+    height: 100%;
+    float: left;
+    margin: 10px;
+    
+}
+
+#aboutright {
+    width: 45%;
+}
+
+#abouttitle1, #summarytitle {
+
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    margin-right: 20px;
+    border-bottom: 1px solid cyan;
+    text-align: center;
+    font-size: 30px;
+    font-variant: small-caps;
+    padding: 20px;
+    font-family: 'Share Tech Mono', monospace;
+
+}
+
+#aboutinfo1, #summaryinfo {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    opacity: 0.7;
+    padding: 20px;
+    font-size: 30px;
+     padding-left: 50px;
+    line-height: 35px;
+}
+
+#aboutright img {
+    width: 100%;
+    object-fit: fill;
+    border: 2px solid black;
+  box-shadow: 10px 10px 5px black;
+
+}
+
+#web, #file, #dns, #systemctl, #network {
+    height: auto;
+    width: 100%;
+    padding: 40px 200px;
+    color: black;
+    margin: 20px auto;
+    
+}
+
+#web h3, #file h3, #dns h3, #systemctl h3, #network h3 {
+    font-size: 23px;
+    margin-top: -20px;
+}
+
+.servers {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 5em;
+    text-align: center;
+    text-shadow:
+		-1px -1px 0 white,
+		1px -1px 0 cyan,
+		-1px 1px 0 white,
+		1px 1px 0 cyan;
+    
+
+}
+
+#dns .servers, #systemctl .servers {
+    color: darkcyan;
+    text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 cyan,
+		-1px 1px 0 black,
+		1px 1px 0 cyan;
+    
+    
+}
+
+#dns {
+    
+    background-image:url(../images/picture4.jpg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #080808;
+    opacity: 0.85;
+}
+
+#dns1 {
+    width: 80%;
+}
+
+#systemctl {
+        
+    background-image:url(../images/picture5.jpg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #080808;
+    opacity: 0.7;
+}
+
+.main img {
+    width: 96%;
+    border: 1px solid white;
+}
+
+.present {
+    width: 90%;
+    padding: 10px;
+    padding-left: 40px;
+    font-size: 27px;
+    margin-left: 40px;
+    border-top: 1px solid black;
+}
+
+#dns .present, #systemctl .present {
+    border-top: 1px solid cyan;
+}
+
+
+#summary {
+    
+       background-image:url(../images/picture6.jpg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #080808;
+    width: 100%;
+    height: 600px;
+    padding: 30px;
+    
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    
+    color: white;
+}
+
+#summarypic {
+    width: 45%;
+    height: 100%;
+    float: left;
+
+}
+
+#summarypic img {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 10px 10px 5px black;
+    border: 2px solid black;
+
+}
+
+#summarytext {
+    float: left;
+    height: 100%;
+    color: white;
+}
+
+
+#footer {
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    color: gainsboro;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    line-height: 25px;
+    font-size: 20px;
+}
+
+#footer ul a {
+    padding: 30px;
+}
+
+#footer ul a:hover {
+    color: cyan;
+}
+
+
+#footer ul li {
+    display: inline;
+    padding: 20px;
+
+}
+
+#footer ul li:hover {
+    color: cyan;
+    padding: 10px;
+}
+
+#copy {
+    margin-top: 30px;
+    font-variant: small-caps;
+    color: cyan;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ZOOM-IN CODE */
+
+input[type=checkbox] {
+  display: none;
+}
+
+#aboutright img {
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+
+#aboutright input[type=checkbox]:checked ~ label > img {
+  transform: scale(1.6);
+  cursor: zoom-out;
+    margin-left: -140px;
+    margin-top: 60px;
+    z-index: 20;
+}
+
+
+input[type=checkbox] {
+  display: none;
+}
+
+#summarypic img {
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+
+#summarypic input[type=checkbox]:checked ~ label > img {
+  transform: scale(1.6);
+  cursor: zoom-out;
+    margin-left: 140px;
+    margin-top: 90px;
+    z-index: 20;
+}
+
+
+/* END ZOOM-IN CODE */
+
+
+
+
+
+
+
+/* DROP-DOWN CODE */
+
+.dropbtn {
+  color: white;
+  cursor: grab;
+}
+
+.dropbtn:hover {
+  color: white;
+    opacity: 0.4;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+    padding: 10px;
+  display: block;
+    text-align: left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    color: black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* END DROP-DOWN CODE*/
+
+
+
+
+
+
+
+
+
+
+
+/* TABS CODE */
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.credit {
+  font-size: 1.2rem;
+  float: right;
+  margin-top: 0.5em;
+}
+
+.credit__link {
+  color: #fc5555;
+  font-weight: bold;
+  text-decoration: none;
+}
+.credit__link:hover {
+  color: #fc5555;
+  text-decoration: underline;
+}
+
+/* Breakpoints
+/* ---------------*/
+/* Tab mixin - just give it a breakpoint
+/* ---------------*/
+/* Tab mixin
+/* ---------------*/
+@media (max-width: 620px) {
+  .tabs--sm {
+    border: 1px solid #d4d4d4;
+  }
+  .tabs--sm .tabs__content {
+    border-width: 0;
+    border-top-width: 1px;
+  }
+  .tabs--sm .tabs__list {
+    background-color: white;
+    margin: 0;
+    margin-bottom: -1px;
+    display: inline-block;
+    width: 100%;
+  }
+  .tabs--sm .tabs__list .tabs__item {
+    overflow: hidden;
+    position: absolute;
+    height: 0;
+  }
+  .tabs--sm .tabs__list .tabs__item--active {
+    height: auto;
+    position: relative;
+  }
+  .tabs--sm .tabs__list--open .tabs__item {
+    position: relative;
+    height: auto;
+  }
+  .tabs--sm .tabs__list--open .tabs__item--active > .tabs__link:after {
+    content: none;
+  }
+  .tabs--sm .tabs__item {
+    width: 100%;
+    max-width: 100%;
+    border-right: 0;
+    text-align: left;
+  }
+  .tabs--sm .tabs__item--active > .tabs__link {
+    background-color: #333333;
+    color: white;
+    border: 0;
+  }
+  .tabs--sm .tabs__item--active > .tabs__link:hover {
+    color: white;
+  }
+  .tabs--sm .tabs__item--active > .tabs__link:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0.5em solid transparent;
+    border-top-color: #ffffff;
+    float: right;
+    margin-top: 0.75em;
+  }
+}
+
+@media (max-width: 760px) {
+  .tabs--md {
+    border: 1px solid #d4d4d4;
+  }
+  .tabs--md .tabs__content {
+    border-width: 0;
+    border-top-width: 1px;
+  }
+  .tabs--md .tabs__list {
+    background-color: white;
+    margin: 0;
+    margin-bottom: -1px;
+    display: inline-block;
+    width: 100%;
+  }
+  .tabs--md .tabs__list .tabs__item {
+    overflow: hidden;
+    position: absolute;
+    height: 0;
+  }
+  .tabs--md .tabs__list .tabs__item--active {
+    height: auto;
+    position: relative;
+  }
+  .tabs--md .tabs__list--open .tabs__item {
+    position: relative;
+    height: auto;
+  }
+  .tabs--md .tabs__list--open .tabs__item--active > .tabs__link:after {
+    content: none;
+  }
+  .tabs--md .tabs__item {
+    width: 100%;
+    max-width: 100%;
+    border-right: 0;
+    text-align: left;
+  }
+  .tabs--md .tabs__item--active > .tabs__link {
+    background-color: #333333;
+    color: white;
+    border: 0;
+      font-family: 'Share Tech Mono', monospace;
+  }
+  .tabs--md .tabs__item--active > .tabs__link:hover {
+    color: white;
+  }
+  .tabs--md .tabs__item--active > .tabs__link:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0.5em solid transparent;
+    border-top-color: #ffffff;
+    float: right;
+    margin-top: 0.75em;
+  }
+}
+
+@media (max-width: 990px) {
+  .tabs--lg {
+    border: 1px solid #d4d4d4;
+  }
+  .tabs--lg .tabs__content {
+    border-width: 0;
+    border-top-width: 1px;
+  }
+  .tabs--lg .tabs__list {
+    background-color: white;
+    margin: 0;
+    margin-bottom: -1px;
+    display: inline-block;
+    width: 100%;
+  }
+  .tabs--lg .tabs__list .tabs__item {
+    overflow: hidden;
+    position: absolute;
+    height: 0;
+  }
+  .tabs--lg .tabs__list .tabs__item--active {
+    height: auto;
+    position: relative;
+  }
+  .tabs--lg .tabs__list--open .tabs__item {
+    position: relative;
+    height: auto;
+  }
+  .tabs--lg .tabs__list--open .tabs__item--active > .tabs__link:after {
+    content: none;
+  }
+  .tabs--lg .tabs__item {
+    width: 100%;
+    max-width: 100%;
+    border-right: 0;
+    text-align: left;
+  }
+  .tabs--lg .tabs__item--active > .tabs__link {
+    background-color: #333333;
+    color: white;
+    border: 0;
+      font-family: 'Share Tech Mono', monospace;
+  }
+  .tabs--lg .tabs__item--active > .tabs__link:hover {
+    color: white;
+  }
+  .tabs--lg .tabs__item--active > .tabs__link:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0.5em solid transparent;
+    border-top-color: #ffffff;
+    float: right;
+    margin-top: 0.75em;
+  }
+}
+
+@media (max-width: 1070px) {
+  .tabs--xl {
+    border: 1px solid #d4d4d4;
+  }
+  .tabs--xl .tabs__content {
+    border-width: 0;
+    border-top-width: 1px;
+  }
+  .tabs--xl .tabs__list {
+    background-color: white;
+    margin: 0;
+    margin-bottom: -1px;
+    display: inline-block;
+    width: 100%;
+  }
+  .tabs--xl .tabs__list .tabs__item {
+    overflow: hidden;
+    position: absolute;
+    height: 0;
+  }
+  .tabs--xl .tabs__list .tabs__item--active {
+    height: auto;
+    position: relative;
+  }
+  .tabs--xl .tabs__list--open .tabs__item {
+    position: relative;
+    height: auto;
+  }
+  .tabs--xl .tabs__list--open .tabs__item--active > .tabs__link:after {
+    content: none;
+  }
+  .tabs--xl .tabs__item {
+    width: 100%;
+    max-width: 100%;
+    border-right: 0;
+    text-align: left;
+  }
+  .tabs--xl .tabs__item--active > .tabs__link {
+    background-color: #333333;
+    color: white;
+    border: 0;
+  }
+  .tabs--xl .tabs__item--active > .tabs__link:hover {
+    color: white;
+  }
+  .tabs--xl .tabs__item--active > .tabs__link:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0.5em solid transparent;
+    border-top-color: #ffffff;
+    float: right;
+    margin-top: 0.75em;
+  }
+}
+
+.tabs__list {
+  margin: 0;
+  margin-bottom: -1px;
+}
+
+.tabs__item {
+  margin-bottom: 0;
+  display: inline-block;
+  width: auto;
+  vertical-align: top;
+    background-color: #464646;
+    color: white;
+    
+}
+
+.tabs__item--active > .tabs__link {
+  border: 1px solid #d4d4d4;
+  background: darkcyan;
+  border-bottom: 0;
+  position: relative;
+  z-index: 3;
+  color: white;
+    font-weight: bolder;
+}
+.tabs__item--active > .tabs__link:hover {
+  color: #262626;
+}
+
+.tabs__link {
+  font-weight: 500;
+  color: #333333;
+  padding: 0.5em 1em;
+  line-height: 2;
+  display: block;
+  text-decoration: none;
+    font-family: 'Share Tech Mono', monospace;
+}
+.tabs__link:hover {
+  text-decoration: underline;
+
+}
+
+.tabs__area {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s linear;
+  height: 0;
+   
+}
+
+.tabs__area--active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s linear;
+  height: auto;
+    
+
+}
+
+.tabs__content {
+  margin-bottom: 0;
+  background: #fff;
+  border: 1px solid #dadacb;
+  overflow: hidden;
+  position: relative;
+  clear: both;
+  padding: 22px;
+  padding: 2.2rem;
+    border: 2px solid darkcyan;
+    background: #b9d8d7;
+    height: 500px;
+    opacity: 0.7;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+#dns .tabs__content, #systemctl .tabs__content {
+    background-color: #0f1b1b;
+    opacity: 0.95;
+    border: 2px solid black;
+    color: ghostwhite;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+/* END TABS CODE */
+
+
+
+
+/* Google Fonts
+
+font-family: 'Roboto', sans-serif;
+
+*/
+
+
+/*Vertical Alignment 
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+flex-direction: column ----- Two or more items to vertically allign
+
+*/
+
+/* Full Screen Image
+
+background-image:url(../images/);
+background-position: center center;
+background-repeat:  no-repeat;
+background-attachment: fixed;
+background-size:  cover;
+background-color: #999;
+
+*/
+
+/*  Making a Fullscreen Video Background 
+
+#video-background{
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+*/
+
+/* Individual Side Box Shadows
+
+top {
+  box-shadow: 0px -15px 10px -15px #111;
+}
+bottom {
+  box-shadow: 0px 15px 10px -15px #111;
+}
+left {
+  box-shadow: -15px 0px 10px -15px #111;
+}
+right {
+  box-shadow: 15px 0px 10px -15px #111;
+}
+
+*/

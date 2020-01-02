@@ -1,0 +1,730 @@
+/* Default CSS-GRID File */
+
+/* STRUCTURE */
+
+#grid {
+    z-index: 10;
+    margin:0px auto 0px auto;
+    width:100%;
+    height:auto;
+    
+    display: grid;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    grid-template-columns: repeat(1, 100%);
+    grid-auto-rows: 560px 50px 600px 960px 450px 950px 400px 200px;
+    grid-template-areas: 
+    /*   * * * * *     *=200px */
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g"
+        "z";
+}
+
+#a {
+    grid-area: a;    
+}
+
+#b {
+    grid-area: b;
+}
+
+#c {
+    grid-area: c;
+}
+
+#d {
+    grid-area: d;
+}
+
+#e {
+    grid-area: e;
+}
+
+#f {
+    grid-area: f;
+}
+
+#g {
+    grid-area: g;
+}
+
+#z {
+    grid-area: z;
+}
+
+/* END STRUCTURE */
+
+/* PRESENTATION */
+
+
+body {
+    color:#111;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tomorrow', sans-serif;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+
+colors {
+    background-color: #999;
+    color: darkgray;
+    color: gray;
+    background-color: rgb(224,224,224);
+    background-color: #222629;
+    color: #474B4F;
+    color: #6B6E70;
+    color: lightgray;
+    color: silver;
+    color: #86c232;
+    background-color: #61892f;
+    
+}
+
+/* HEADING */
+
+#a {
+    border-top: 10px solid #86c232;
+    background-image:linear-gradient(rgba(34,38,41,0.9),rgba(34,38,41,0.9)),url(../images/coding.jpg);
+    background-image:;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        
+}
+
+#a h1 {
+    font-size: 120px;
+    font-weight: bolder;
+    color: darkgray;
+    margin-bottom: 20px;
+}
+
+#a h2 {
+    font-size: 25px;
+    color: gray;
+}
+
+
+
+/* NAV */
+
+#b {
+    background-color: #61892f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+#b ul li {
+    display: inline;
+    padding: 16px;
+}
+
+#b ul li:hover {
+    background-color: rgba(34, 38, 41, 0.4);
+    color: white;
+}
+
+
+/* UNIVERSAL */
+
+.header {
+    width: 100%;
+    height: 15%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding; 20px;
+    
+}
+
+.header h1 {
+    font-size: 30px;
+    width: 25%;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 4px double black;
+    margin-bottom: 10px;
+}
+
+.content {
+    width: 100%;
+    height: 85%;
+    padding: 10px;
+}
+
+
+/* ABOUT */
+
+#c {
+    background-color: rgb(224,224,224);
+    padding: 20px;
+}
+
+
+#aboutleft, #aboutmiddle, #aboutright {
+    float: left;
+    width: 33.33%;
+    height: 90%;
+    padding: 10px;
+}
+
+.content h2 {
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+#c .content p {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 20px;
+    background-color: #E8E8E8;
+    height: 350px;
+
+}
+
+
+/* SKILLS */
+
+#d {
+    background-color: silver;
+    padding: 20px
+}
+
+#d .header p {
+    font-size: 15px;
+    height: 15%;
+    margin-top: 15px;
+}
+
+.skillsect {
+    width: 50%;
+    height: 50%;
+    float: left;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.interpersonal {
+    margin-top: -70px;
+}
+
+.skillsect h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    padding: 10px;
+    font-variant: small-caps;
+    background-color: darkgray;
+}
+
+/* EDUCATION */
+
+
+#e {
+    background-color: lightgray;
+}
+
+#logo {
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+    filter: drop-shadow(5px 3px 3px black);
+    
+    margin-left: 50px;
+}
+
+#text {
+    width: 55%;
+    height: 100%;
+    float: left;
+    margin-left: 50px;
+    
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    background-color: silver;
+    padding: 10px;
+    height: 90%;
+}
+
+#e h2, #e p {
+    
+    margin-bottom: 5px;
+    
+    text-align: left;
+}
+
+
+#e h2 {
+    font-size: 30px;
+}
+
+#e h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#e h4, #e p {
+    font-size: 20px;
+    margin-bottom: 10px
+}
+
+
+/* PORTFOLIO */
+
+
+#f {
+    background-color: #61892f;
+    padding; 10px;
+}
+
+#projects {
+     z-index: 10;
+    margin:0px auto 0px auto;
+    width:90%;
+    height:auto;
+    
+    display: grid;
+    grid-row-gap: 0px;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(4, 24.3%);
+    grid-auto-rows: 200px 50px;
+}
+
+.project {
+    border: 1px solid lightgray;
+    overflow: hidden;
+    background-color: black;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+    background-color: #999;
+    color: #222629;
+    font-weight: bold;
+    
+    box-shadow: inset 1px 0px 3px 0px rgba(0,0,0,0.9);
+    
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 0px solid #CCCCCC; 
+    
+}
+
+.btn:hover {
+    margin-top: 3px;
+}
+
+#iframeHolder {
+    width: 90%;
+    object-fit: contain;
+    height: 500px;
+    border: 2px solid #222629;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+
+
+/* CONTACT */
+
+#g {
+    background-color: #474B4f;
+    padding: 20px;
+}
+
+#g .header h1 {
+    color: #999;
+    border-bottom: 4px double #999;
+}
+
+#g .header {
+    margin-bottom: 60px;
+}
+
+#contact {
+      z-index: 10;
+    margin:0px auto 0px auto;
+    width:80%;
+    height:auto;
+    
+    display: grid;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    grid-template-columns: repeat(5, 20%);
+    grid-auto-rows: 90px;
+    grid-template-areas: 
+    /*   * * * * *     *=200px */
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid black;
+    padding: 10px;
+    background-color: rgba(34, 38, 41, 0.2);
+}
+
+.phone {
+    border-left: 1px solid black;
+
+}
+
+.social h1 {
+    font-size: 20px;
+    color: lightgray;
+}
+
+.social a, .social i {
+    font-size: 27px;
+}
+
+.social a:hover, .social i:hover {
+    color: #86c232;
+    cursor: pointer;
+}
+
+.social h1:hover {
+    color: #999;
+    cursor: pointer;
+}
+
+
+
+/* FOOTER */
+
+#z {
+    background-color: #222629;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    font-size: 20px;
+    font-variant: small-caps;
+    color: #86c232;
+}
+
+
+
+
+
+
+
+
+
+/* SKILLS GRAPH CODE */
+
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+    height: auto;
+}
+
+.skills p {
+    z-index:200;
+    height: 100%;
+    width: 50%;
+    float: left;
+    margin-top: -10px;
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  color: white; /* White text color */
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.left {
+    text-align: left;
+}
+
+.html {width: 95%;} 
+.css {width: 95%; } 
+.js {width: 60%; } 
+.php {width: 75%; }
+.MySQL {width: 90%;}
+.Cplusplus {width: 80%;}
+.jQuery {width: 50%;}
+.linux {width: 40%;}
+
+.math {width: 90%;}
+.techcom {width: 90%;}
+.microsoft {width: 95%}
+.vs {width: 85%}
+.brackets {width: 90%;}
+.filezilla {width: 90%;}
+
+.lead {width: 95%;}
+.group {width: 90%;}
+.team {width: 95%;}
+.solve {width: 85%;}
+.eq {width: 85%;}
+.conflict {width: 80%;}
+
+.english {width: 100%;}
+.spanish {width: 70%;}
+.swahili {width: 85%;}
+.luo {width: 50%;}
+
+
+
+.skills::before {
+    content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  top: 0;
+  z-index: -5;
+  background: #ddd;
+    
+}
+
+.skills::after {
+content: '';
+  height: 100%;
+  transition: 0.7s;
+  display: block;
+  width: 100%;
+  animation: bar-before 1 1.8s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+background-color: #61892f;
+    
+    
+}
+
+@-webkit-keyframes bar-before{
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+
+/* END SKILLS GRAPH CODE */
+
+
+
+/* Grid Areas
+
+#a {
+    grid-area: a;    
+}
+
+#b {
+    grid-area: b;
+}
+
+#c {
+    grid-area: c;
+}
+
+#d {
+    grid-area: d;
+}
+
+#e {
+    grid-area: e;
+}
+
+#f {
+    grid-area: f;
+}
+
+#g {
+    grid-area: g;
+}
+
+#h {
+    grid-area: h;
+}
+
+#i {
+    grid-area: i;
+}
+
+#j {
+    grid-area: j;
+}
+
+#k {
+    grid-area: k;
+}
+
+#l {
+    grid-area: l;
+}
+
+#m {
+    grid-area: m;
+}
+
+#n {
+    grid-area: n;
+}
+
+#o {
+    grid-area: o;
+}
+
+#p {
+    grid-area: p;
+}
+
+#q {
+    grid-area: q;
+}
+
+#r {
+    grid-area: r;
+}
+
+#s {
+    grid-area: s;
+}
+
+#t {
+    grid-area: t;
+}
+
+#u {
+    grid-area: u;
+}
+
+#v {
+    grid-area: v;
+}
+
+#w {
+    grid-area: w;
+}
+
+#x {
+    grid-area: x;
+}
+
+#y {
+    grid-area: y;
+}
+
+#z {
+    grid-area: z;
+}
+
+*/
+
+/* Color Palette
+
+
+
+*/
+
+/*Vertical Alignment 
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+*/
+
+/* Google Fonts
+
+font-family: 'Roboto', sans-serif;
+
+*/
+
+/* Full Screen Image
+
+background-image:url(../images/);
+background-position: center center;
+background-repeat:  no-repeat;
+background-attachment: fixed;
+background-size:  cover;
+background-color: #999;
+
+*/
+
+/*  Making a Fullscreen Video Background 
+
+#video-background{
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+*/
+
+/* Individual Side Box Shadows
+
+top {
+  box-shadow: 0px -15px 10px -15px #111;
+}
+bottom {
+  box-shadow: 0px 15px 10px -15px #111;
+}
+left {
+  box-shadow: -15px 0px 10px -15px #111;
+}
+right {
+  box-shadow: 15px 0px 10px -15px #111;
+}
+
+*/

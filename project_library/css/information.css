@@ -1,0 +1,496 @@
+/* Information CSS-GRID File */
+
+/* STRUCTURE */
+
+#grid {
+    z-index: 10;
+    margin:0px auto 0px auto;
+    width:1040px;
+    height:auto;
+    
+    display: grid;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    grid-template-columns: repeat(5, 170px);
+    grid-auto-rows: 150px 400px 400px 200px;
+    grid-template-areas: 
+    /*   * * * * *     *=200px */
+        "a b b c c c"
+        "d d d e e e"
+        "f f f g g g"
+        "z z z z z z";
+    
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#a {
+    grid-area: a;    
+}
+
+#b {
+    grid-area: b;
+}
+
+#c {
+    grid-area: c;
+}
+
+#d {
+    grid-area: d;
+}
+
+#e {
+    grid-area: e;
+}
+
+#f {
+    grid-area: f;
+}
+
+#g {
+    grid-area: g;
+}
+
+#z {
+    grid-area: z;
+}
+
+
+
+
+/* PRESENTATION */
+
+
+body {
+    color:#111;
+    background-color: #474853;
+    font-family: 'Roboto', sans-serif;
+    
+    background-image:url(../images/newback.jpg);
+    background-position: right center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+     
+}
+
+#tint {
+    background-color: rgb(248, 237, 210, 0.5);
+    background-color: rgb(0,0,0,0.8);
+    
+}
+
+#a, #b, #c, #d, #e, #f, #g, #z {
+    z-index: 15;
+}
+
+#a, #b, #c {
+     background-color: rgb(37, 28, 7);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+
+}
+
+#a img {
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+    
+    filter: drop-shadow(1px 1px 0 #6d6e71)
+        drop-shadow(-1px 1px 0 )
+        drop-shadow(1px -1px 0 #6d6e71)
+        drop-shadow(-1px -1px 0 );
+}
+
+#b {
+    padding-top: 30px;
+}
+
+#b h1 {
+    font-size: 32px;
+    font-weight: bolder;
+    color: BLACK;
+    border-bottom: 2px solid #6d6e71;
+    width: 309px;
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+    
+    text-shadow: 1px 1px 1px #6d6e71
+}
+
+
+
+#b h2 {
+    font-size: 27px;
+    color: #6d6e71;
+    font-weight: bold;
+}
+
+#c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#c ul {
+    width: 100%;
+    padding: 0px;
+}
+
+#c ul li{
+    float: left;
+    margin-right: 15px;
+    padding: 10px;
+    font-size: 15px;
+    width: 22%;
+    font-weight: bold;
+    background-color: #000;
+    text-align: center;
+    border-radius: 10px;
+    color: #6d6e71;
+
+}
+
+#c ul li:hover {
+    background-color: #6d6e71;
+    color: #000;
+}
+
+#d, #e, #f, #g {
+    background-color: #f8edd2;
+    padding: 20px;
+    
+    
+}
+
+#g p {
+    
+    padding: 10px;
+
+}
+
+#e img, #f img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    border: 2px solid black;
+    
+    filter: drop-shadow(0 0px 9px #000000);
+    
+        
+}
+
+#e, #f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#d h1, #g h1 {
+    text-align: center;
+    font-size: 30px;
+    background-color: #8E8268;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-variant: small-caps;
+
+}
+
+#d h2 {
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+#d img {
+    max-width: 400px;
+    margin: auto;
+}
+
+
+
+
+
+
+#z {
+   background-color: #003764;
+    padding: 10px;
+    padding-top: 20px;
+    
+    background-color: #251C07;
+}
+
+#social {
+    width: 33%;
+    float: left;
+    height: 100%;
+    padding: 10px;
+    padding-top: 30px;
+    font-size: 18px;
+    margin-right: 10px;
+    text-align: center;
+    
+}
+
+#social h1 {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 22px;
+    color: #6d6e71;
+    margin-bottom: 5px;
+
+}
+
+#social h2 {
+    color: #6d6e71;;
+
+}
+
+#social ul a {
+    padding: 10px;
+     color: black;
+    font-size: 24px;
+}
+
+#social ul a:hover {
+    color: #6d6e71;;
+    font-weight: bold;
+    padding-left: 20px;
+
+}
+
+#copy {
+    width: 32%;
+    float: left;
+    margin-right: 10px;
+    height: 90%;
+    padding: 10px;
+    color: #6d6e71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    text-align: center;
+    font-size: 18px;
+    
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+#copy h1 {
+    font-variant: small-caps;
+    color: #6d6e71;;
+    font-weight: bold;
+    margin-top: 10px;
+    
+    
+}
+
+#designer {
+    width: 30%;
+    float: left;
+    height: 100%;
+    font-size: 18px;
+    padding-top: 18px;
+    margin-left: 20px;
+    
+    font-variant: small-caps;
+}
+
+
+
+#designer h2 {
+    color: rgb(109, 110, 113);
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#designer h2::first-line {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* Grid Areas
+
+#a {
+    grid-area: a;    
+}
+
+#b {
+    grid-area: b;
+}
+
+#c {
+    grid-area: c;
+}
+
+#d {
+    grid-area: d;
+}
+
+#e {
+    grid-area: e;
+}
+
+#f {
+    grid-area: f;
+}
+
+#g {
+    grid-area: g;
+}
+
+#h {
+    grid-area: h;
+}
+
+#i {
+    grid-area: i;
+}
+
+#j {
+    grid-area: j;
+}
+
+#k {
+    grid-area: k;
+}
+
+#l {
+    grid-area: l;
+}
+
+#m {
+    grid-area: m;
+}
+
+#n {
+    grid-area: n;
+}
+
+#o {
+    grid-area: o;
+}
+
+#p {
+    grid-area: p;
+}
+
+#q {
+    grid-area: q;
+}
+
+#r {
+    grid-area: r;
+}
+
+#s {
+    grid-area: s;
+}
+
+#t {
+    grid-area: t;
+}
+
+#u {
+    grid-area: u;
+}
+
+#v {
+    grid-area: v;
+}
+
+#w {
+    grid-area: w;
+}
+
+#x {
+    grid-area: x;
+}
+
+#y {
+    grid-area: y;
+}
+
+#z {
+    grid-area: z;
+}
+
+*/
+
+/* Color Palette
+
+
+
+*/
+
+/*Vertical Alignment 
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+flex-direction: column ----- Two or more items to vertically allign
+
+*/
+
+/* Google Fonts
+
+font-family: 'Roboto', sans-serif;
+
+*/
+
+/* Full Screen Image
+
+background-image:url(../images/);
+background-position: center center;
+background-repeat:  no-repeat;
+background-attachment: fixed;
+background-size:  cover;
+background-color: #999;
+
+*/
+
+/*  Making a Fullscreen Video Background 
+
+#video-background{
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+*/
+
+/* Individual Side Box Shadows
+
+top {
+  box-shadow: 0px -15px 10px -15px #111;
+}
+bottom {
+  box-shadow: 0px 15px 10px -15px #111;
+}
+left {
+  box-shadow: -15px 0px 10px -15px #111;
+}
+right {
+  box-shadow: 15px 0px 10px -15px #111;
+}
+
+*/
