@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Default GRID Template</title>
+    <title>Joseph Owiti Portfolio</title>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
+    
+    <!-- Logo -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/portfolio.png"/>
     
     <!-- Stylesheets -->
     <link href="css/destyle.css" rel="stylesheet" />
@@ -12,6 +15,8 @@
     
     <!-- Google Font(s) -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
     
@@ -40,7 +45,6 @@
       
     <div id="b">
     
-        <nav>
         <ul>
             <li><a href="#c">ABOUT</a></li>
             <li><a href="#d">SKILLS</a></li>
@@ -49,11 +53,10 @@
             <li><a href="#g">CONTACT</a></li>
             
         </ul>
-            </nav>
     
     </div> 
         
-    <div id="c">
+    <div id="c" class="main">
     
         <div class="header">
             
@@ -66,23 +69,22 @@
             <div id="aboutleft">
                 <h2>History</h2>
                 
-                <p>My name is Joseph Owiti. I was born on January 10, 1998. For the longest time my home was near a western city in Kenya called Kisumu. My specific home town is called Muhoroni, nearing the large Lake Victoria. I have four siblings who are all older than me. Currenlty, I reside in Virginia as an international student and live in a suburb called Fredericksburg. I am a Junior Computer Science student.</p>
+                <p>I am Joseph Paul Owiti and I was born on January 10, 1998. For the longest time, my home was near a western city in Kenya called Kisumu. My specific home town is called Muhoroni, nearing the large Lake Victoria. I have four siblings who are all older than me. Currently, I reside in Virginia as an international student and live in a suburb called Fredericksburg. I am a Junior Computer Science student.</p>
                 
             </div>
 
             <div id="aboutmiddle">
                 <h2>Passions</h2>
                 
-                <p>My cognates are Software Engineering, and Web & Mobile Development. Though my schedule may seem hectic, I still have timme to enjoy Ultimate Frisbee, Soccer, Volleyball, Lacrosse, and Chinese Food. I also enjoy hiking and bowling.</p>
-                
-            
-            
+                <p>I want to help people. People we talk to and people we walk past in the streets all have a story, and they have struggles. People are hurting around us and they are all searching for a solution or an answer. So if I can be part of that solution, if I can find a way to help others find their answers, then my purpose is met. Some extra-curricular activities I enjoy are Ultimate Frisbee, Soccer, Volleyball, Lacrosse, and Chinese Food. The world is beautiful and needs to be seen, so I love the outdoors. </p>
+
             </div>
 
             <div id="aboutright">
                 <h2>Interests</h2>
                 
-                <p>I intend to use my acquired technical skills and software knowledge in any form of Software Development. I love to learn new things and always wholeheartedly pursue what is before me. Though I am not yet sure what direction to focus on within the Software Development arena, I know that I will be diligent in all of my academic and career-related experiences as I discover more about the possibilities within this discipline. 
+                <p>
+                    I intend to use my acquired technical skills and software knowledge in any form of Software Development. I love to learn new things and always wholeheartedly pursue what is before me. Any part of Software Development, Web Programming, and Database Design & Programming are three areas that I know I will enjoy. I know that I will be diligent in all of my academic and career-related experiences as I discover more about the possibilities within this discipline. 
 
                 </p>
                 
@@ -94,30 +96,27 @@
         
     </div>    
     
-    <div id="d">
+    <div id="d" class="main">
         
         
         <div class="header">
             
             <h1>MY SKILLS</h1>
             
-            <p>Hit the refresh button to update the ratings</p>
+            <p>Please refresh the page to update the ratings.</p>
         
         </div>
         
         <div class="content" >
             
-            
             <div class="skillsect">
                 
                 <h1>Programming Languages</h1>
             
-                
                 <div class="container">
                   <div class="skills html"><p class="left">HTML</p><p>95%</p></div>
                 </div>
 
-                
                 <div class="container">
                   <div class="skills css"><p class="left">CSS</p><p>95%</p></div>
                 </div>
@@ -241,7 +240,7 @@
         
     </div> 
     
-    <div id="e">
+    <div id="e"  class="main">
         
         <div class="header">
             
@@ -261,10 +260,10 @@
             
                 <h2>Liberty University</h2>
                 <h3>Bachelor of Science: Computer Science </h3>
-                <h4>Cognates: Software Engineering, Web & Mobile Programming</h4>
-                <p>Honors Program</p>
-                <p>Minor: Mathematics</p>
-                <p>Current GPA: 8.93</p>
+                <h4>- Cognates: Software Engineering, Web & Mobile Programming</h4>
+                <p>- Honors Program</p>
+                <p>- Minor: Mathematics</p>
+                <p>- Current GPA: 3.86/4.0</p>
             
             </div>
         
@@ -272,18 +271,25 @@
     
     </div>
     
-    <div id="f">
+    <div id="f" class="main">
 
 
         <div class="header">
             
             <h1>PORTFOLIO</h1>
             
-            <p>Please refresh the page before selecting a new project to view below</p>
+            <p>In addition to this website, below are some other projects I have worked on. They are in order of complexity.</p>
+            <p>Please refresh the page before selecting a new project to view below.</p>
         
         </div>
         
         <div id="projects">
+            
+            <div class="project">
+                
+                 <iframe href="index.html" src="project_gaming/index.html" width="100%" height="100%" scrolling="no"></iframe>
+            
+            </div>
             
             <div class="project">
                 
@@ -308,32 +314,43 @@
             
             <div class="project">
             
-                <button class="btn" id="button1">Acme Library</button>    
+                <button class="btn" id="button1">Optic Gaming</button>    
+            
+            </div>
+            
+            <div class="project">
+            
+                <button class="btn" id="button2">Acme Library</button>    
             
             </div>
             <div class="project">
             
-                   <button class="btn" id="button2">The Vintage Garage</button>
+                   <button class="btn" id="button3">The Vintage Garage</button>
             
             </div>
             <div class="project">
                 
-                <button class="btn" id="button3">Christmas</button>
+                <button class="btn" id="button4">Christmas Countdown</button>
 
             </div>
             <div class="project">
             
-                <button class="btn" id="button4">Internet of Things</button>
+                <button class="btn" id="button5">Internet of Things</button>
                 
             </div>
             
         </div>
+        
+        
+        <div id="iframeText">
+            <h1>Welcome to my portfolio.<br/> The websites you chose to view will appear here once you click the buttons above. <br/>Please refresh the page before you select another website and if you run into technical issues, just refresh this page and try again.</h1>
+        </div>
 
-            <div id="iframeHolder"></div>
+        <div id="iframeHolder"></div>
     
     </div>
     
-    <div id="g">
+    <div id="g" class="main">
     
         <div class="header">
             
@@ -345,13 +362,13 @@
             
             <div class="social phone"><i class="fa fa-phone"></i></div>
             <div class="social"><i class="fa fa-envelope"></i></div>
-            <div class="social"><a href="#" class="fa fa-linkedin"></a></div>
-            <div class="social"><a href="#" class="fa fa-facebook"></a></div>
-            <div class="social"><a href="#" class="fa fa-github"></a></div>
+            <div class="social"><a href="https://www.linkedin.com/in/owiti" target="_blank" class="fa fa-linkedin"></a></div>
+            <div class="social"><a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a></div>
+            <div class="social"><a href="https://github.com/josephowiti7" target="_blank" class="fa fa-github"></a></div>
             
             
-            <div class="social phone"><h1>5406216698</h1></div>
-            <div class="social"><h1>jpowiti@liberty.edu</h1></div>
+            <div class="social phone"><h1>540-621-6698</h1></div>
+            <div class="social"><h1>josephowiti7<br/>@gmail.com</h1></div>
             <div class="social"><h1>LinkedIn</h1></div>
             <div class="social"><h1>Facebook</h1></div>
             <div class="social"><h1>GitHub</h1></div>
@@ -369,30 +386,55 @@
             
 </div> 
     
+    
+    <!-- STICKY NAVBAR SCRIPT -->
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("b");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
+    
     <!-- PORTFOLIO SCRIPT -->
     
             <script type="text/javascript">
             $(function(){
                 
-                 $('#button1').click(function(){ 
+                
+                $('#button1').click(function(){ 
+                    if(!$('#iframe').length) {
+                            $('#iframeHolder').html('<iframe id="iframe" src="project_gaming/index.html" width="100%" height="100%"></iframe>');
+                    }
+                });   
+                
+                 $('#button2').click(function(){ 
                     if(!$('#iframe').length) {
                             $('#iframeHolder').html('<iframe id="iframe" src="project_library/index.html" width="100%" height="100%"></iframe>');
                     }
                 });   
                 
-                $('#button2').click(function(){ 
+                $('#button3').click(function(){ 
                     if(!$('#iframe').length) {
                             $('#iframeHolder').html('<iframe id="iframe" src="project_cars/index.html" width="100%" height="100%"></iframe>');
                     }
                 });   
                 
-                 $('#button3').click(function(){ 
+                 $('#button4').click(function(){ 
                     if(!$('#iframe').length) {
                             $('#iframeHolder').html('<iframe id="iframe" src="project_christmas/index.html" width="100%" height="100%"></iframe>');
                     }
                 });   
                 
-                 $('#button4').click(function(){ 
+                 $('#button5').click(function(){ 
                     if(!$('#iframe').length) {
                             $('#iframeHolder').html('<iframe id="iframe" src="project_IoT/index.html" width="100%" height="100%"></iframe>');
                     }
