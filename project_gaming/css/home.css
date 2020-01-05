@@ -1,0 +1,388 @@
+/* Home CSS File */
+
+body {
+    color: white;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    
+    background-image:url(../images/background.jpg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+    
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* NAV BAR */
+
+#nav {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(0,0,0, 1);
+    z-index: 50;
+    border-top: 1px solid rgb(170,213,97);
+    border-bottom: 1px solid rgb(170,213,97);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    
+    
+
+}
+
+#logo {
+    width: 5%;
+    height: 100%;
+    float: left;
+    padding: 10px;
+}
+
+#logo img {
+    object-fit: contain;
+}
+
+#menu {
+    width: 55%;
+    height: 100%;
+    float: left;
+    padding: 2px;
+}
+
+#menu ul{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;     
+}
+
+#menu ul li {
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+#menu ul li:hover {
+    color: black;
+    background-color: rgb(170,213,97);
+    
+    box-shadow: inset 0 0 3px #000000;
+}
+
+#search {
+    width: 25%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    padding-left: 30px;
+    
+}
+
+#searchbar {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+#searchbar input[type=text] {
+
+    height: 100%;
+    padding:5px 10px;
+    background-color:gainsboro;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: inset 0 0 3px #000000;
+    color: black;
+}
+
+#searchbar input[name=search] {
+    padding:6px;
+    border:1px solid black;
+    height: 100%;
+    background-color: rgb(170,213,97);
+    margin-left: -5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: black;
+}
+
+
+/* END NAVBAR */
+
+#container {
+    margin: 80px auto 20px auto;
+    width: 85%;
+    height: auto;
+    padding:30px 10px 50px 10px;
+    background-color: rgb(0,0,0, 0.75);   
+}
+
+#header {
+    height: 600px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 9px 3px rgb(170,213,97);
+
+}
+
+#content {
+    height: 420px;
+    width: 95%;
+    margin: auto;
+}
+
+#content h1 {
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: white;
+    
+}
+
+#text {
+    border: 3px solid rgb(170,213,97);
+    width: 49%;
+    height: 100%;
+    float: left;
+    padding: 20px 10px;
+}
+
+
+#text p {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+
+
+/* LOGIN */
+
+#login {
+    border: 3px solid rgb(170,213,97);
+    height: 100%;
+    width: 49%;
+    float: right;
+    padding: 20px 50px;
+}
+
+input[name=username],input[name=password]{
+width: 100%;
+height: 40px;
+padding: 5px 15px;
+margin-bottom: 25px;
+margin-top: 5px;
+color: #4f4f4f;
+font-size: 16px;
+border-radius: 5px;
+background-color: gainsboro;
+    
+box-shadow: inset 0 0 5px #000000;
+
+}
+
+label{
+color: white;
+font-size: 20px;
+}
+
+input[type=button]{
+font-size: 16px;
+background: linear-gradient(#aad561 5%, #d2fd86 100%);
+border: 1px solid black;
+color: black;
+font-weight: bold;
+cursor: pointer;
+width: 100%;
+border-radius: 5px;
+padding: 10px 0;
+}
+
+input[type=button]:hover{
+background: linear-gradient(#d2fd86 5%, #aad561 100%);
+    
+    
+}
+
+
+/* END LOGIN */
+
+
+/* FOOTER */
+
+
+#footer {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+
+#social {
+    height: 180px;
+    width: 100%;
+    background-color: #080808;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#social ul a {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.fa {
+  padding: 20px 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 1;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-twitter:hover {
+  color: #55acee;
+}
+
+.fa-android:hover {
+    color: #a4c639;
+}
+
+.fa-snapchat:hover {
+    color: #fffc00;
+}
+
+.fa-reddit:hover {
+    color: #ff5700;
+}
+
+.fa-instagram:hover {
+    color: #430297;
+}
+
+#social ul li {
+    display: inline;
+    padding: 15px;
+}
+
+#social ul li:hover {
+    color: #0066FF;
+    text-decoration: underline;
+}
+
+#copy {
+    line-height: 30px;
+    font-size: 18px;
+    font-variant: small-caps;
+}
+
+
+#copy {
+    height: 220px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+/* Google Fonts
+
+font-family: 'Roboto', sans-serif;
+
+*/
+
+
+/*Vertical Alignment 
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+flex-direction: column ----- Two or more items to vertically allign
+
+*/
+
+/* Full Screen Image
+
+background-image:url(../images/);
+background-position: center center;
+background-repeat:  no-repeat;
+background-attachment: fixed;
+background-size:  cover;
+background-color: #999;
+
+*/
+
+/*  Making a Fullscreen Video Background 
+
+#video-background{
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+*/
+
+/* Individual Side Box Shadows
+
+top {
+  box-shadow: 0px -15px 10px -15px #111;
+}
+bottom {
+  box-shadow: 0px 15px 10px -15px #111;
+}
+left {
+  box-shadow: -15px 0px 10px -15px #111;
+}
+right {
+  box-shadow: 15px 0px 10px -15px #111;
+}
+
+*/
