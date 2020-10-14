@@ -1,510 +1,249 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Joseph Owiti Portfolio</title>
+<html lang ="en">
+ <head>
+    <title>Joseph Owiti | Software Engineering Student</title>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
     
     <!-- Logo -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/portfolio.png"/>
-    
-    <!-- Stylesheets -->
-    <link href="css/destyle.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    
-    <!-- Google Font(s) -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
-    
-    
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    
-    <!-- JavaScript -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
-    
+    <link rel="shortcut icon" type="image/x-icon" href="images/logoblack.png"/>
+     
+     
+     <link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">
 
-</head>
-<body>
+     
+<!-- CSS -->
+     
+<style type="text/css">
+    body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Share Tech', sans-serif;
+    background-color: black;
+        
+    }
+    .preload{
+        border: 2px solid white;
+     width: 100%;
+     height: 100%;
+     background: #333;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 1;
+        border: 1px solid white;
+        
+        background-image:linear-gradient(rgba(34,38,41,0.75),rgba(34,38,41,0.75)),url(../images/landpage2.jpg);
+        
+        background-position: center center;
+        background-repeat:  no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: block;
+        filter: blur(4px);
+        
+        
+        
+    }
 
-<div id="grid">
+    .logo {
+     width: 60%;
+     height: auto;
+        margin: 3% auto 4% auto;
+     /*text-shadow: -1px 2px 2px #000;*/
+     text-align: center;
+     color: azure;
+        padding: 10px;
+        z-index: 500;
+        position: relative;
+        
+    
+    }
+    
+    .logo h1 {
+        font-size: 20px;
+        border: 1px solid #86c232;
+        border-radius: 10px;
+        width: 40%;
+        margin: auto;
+        padding: 10px;
+        color: whitesmoke;
+        
+    }
+    
+    .logo h2 {
+        font-size: 20px;
+        color: whitesmoke;
+    }
+    
+    .logo h3 {
+        font-size: 20px;
+        color: #86c232;
+    }
+    
+    #loader {
+        width: 26%;
+        height: 180px;
+        margin: auto;
+        z-index: 500;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        
+    }
+    
+    .loader-frame {
+     width: 105px;
+     height: 105px;
+     margin: auto;
+     position: relative;
+        float:left;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        
+    }
+    .loader1, .loader2 {
+     position: absolute;
+     border: 5px solid transparent;
+     border-radius: 50%;
+        
+    }
+    .loader1 {
+     width: 95px;
+     height: 95px;
+     border-top: 5px solid black;
+     border-bottom: 5px solid black;
+     animation: clockwisespin 2s linear 3;
 
-<div id="a">
-                
+    }
+    .loader2 {
+     width: 72px;
+     height: 72px;
+     border-left: 5px solid #86c232;
+     border-right: 5px solid #86c232;
+     top: 6.2px; left: 6.2px;
+     animation: anticlockwisespin 2s linear 3;
+        padding: 5px;
+    }
+    
+    .loader-frame img {
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        object-fit: cover;
+        z-index: -500;
+        
+    }
+    
+    
+/*
+    #languages {
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        z-index: 500;
+        margin: auto;
+        bottom: 0;
+        color: whitesmoke;
+        color: #86c232;
+
+        font-size: 8px;
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+        align-items:center;
+        flex-direction: column;
+        
+    }
+    .lang {
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #86c232;
+        color: whitesmoke;
+
+    }
+*/
+
+    @keyframes clockwisespin {
+     from {transform: rotate(0deg);}
+     to {transform: rotate(360deg);}
+    }
+    @keyframes anticlockwisespin {
+     from {transform: rotate(0deg);}
+     to {transform: rotate(-360deg);}
+    }
+    @keyframes fadeout {
+     from {opacity: 1;}
+     to {opacity: 0;}
+    }
+</style>
+     
+<!--End CSS -->
+
+
+
+ </head>
+
+ <body id="body">
+     
+    <div class = "preload" id ="preload"> </div>
+
+    <div class ="logo">
+        <h3>Hi, my name is </h3>
         <h1>JOSEPH OWITI</h1>
-        <h2>Resident Assistant &bull; Academic Peer Mentor &bull; Software & Web Developer</h2>
-                      
+        <h2>Welcome to my Website.</h2>
+      </div>
+
+    <div id="loader">
+               <div class = "loader-frame">
+                <div class = "loader1" id = "loader1"></div>
+                <div class = "loader2" id = "loader2">
+                   </div>
+                   <img src="images/logowhite.png">
+               </div>
+                
     </div>
-      
-    <div id="b">
-    
-        <ul>
-            <li><a href="#c">ABOUT</a></li>
-            <li><a href="#d">SKILLS</a></li>
-            <li><a href="#e">EDUCATION</a></li>
-            <li><a href="#f">PORTFOLIO</a></li>
-            <li><a href="#g">CONTACT</a></li>
-            
-        </ul>
-    
-    </div> 
-        
-    <div id="c" class="main">
-    
-        <div class="header">
-            
-            <h1>ABOUT ME</h1>
-        
-        </div>
-        
-        <div class="content">
-            
-            <div id="aboutleft">
-                <h2>History</h2>
-                
-                <p>I am Joseph Paul Owiti and I was born on January 10, 1998. For the longest time, my home was near a western city in Kenya called Kisumu. My specific home town is called Muhoroni, nearing the large Lake Victoria. I have four siblings who are all older than me. Currently, I reside in Virginia as an international student and live in a suburb called Fredericksburg. I am a Junior Computer Science student.</p>
-                
-            </div>
-
-            <div id="aboutmiddle">
-                <h2>Passions</h2>
-                
-                <p>I want to help people. People we talk to and people we walk past in the streets all have a story, and they have struggles. People are hurting around us and they are all searching for a solution or an answer. So if I can be part of that solution, if I can find a way to help others find their answers, then my purpose is met. Some extra-curricular activities I enjoy are Ultimate Frisbee, Soccer, Volleyball, Lacrosse, and Chinese Food. The world is beautiful and needs to be seen, so I love the outdoors. </p>
-
-            </div>
-
-            <div id="aboutright">
-                <h2>Interests</h2>
-                
-                <p>
-                    I intend to use my acquired technical skills and software knowledge in any form of Software Development. I love to learn new things and always wholeheartedly pursue what is before me. Any part of Software Development, Web Programming, and Database Design & Programming are three areas that I know I will enjoy. I know that I will be diligent in all of my academic and career-related experiences as I discover more about the possibilities within this discipline. 
-
-                </p>
-                
-            
-            
-            </div>
-            
-        </div>
-        
-    </div>    
-    
-    <div id="d" class="main">
-        
-        
-        <div class="header">
-            
-            <h1>MY SKILLS</h1>
-            
-            <p>Please refresh the page to update the ratings.</p>
-        
-        </div>
-        
-        <div class="content" >
-            
-            <div class="skillsect">
-                
-                <h1>Programming Languages</h1>
-            
-                <div class="container">
-                  <div class="skills html"><p class="left">HTML</p><p>95%</p></div>
-                </div>
-
-                <div class="container">
-                  <div class="skills css"><p class="left">CSS</p><p>95%</p></div>
-                </div>
-
-              
-                <div class="container">
-                  <div class="skills js"><p class="left">JavaScript</p><p>60%</p></div>
-                </div>
-
-                <div class="container">
-                  <div class="skills php"><p class="left">PHP</p><p>75%</p></div>
-                </div>
-                
-                <div class="container">
-                  <div class="skills MySQL"><p class="left">MySQL</p><p>90%</p></div>
-                </div>
-                
-                <div class="container">
-                  <div class="skills Cplusplus"><p class="left">C++</p><p>80%</p></div>
-                </div>
-                
-                <div class="container">
-                  <div class="skills jQuery"><p class="left">jQuery</p><p>50%</p></div>
-                </div>
-                
-                <div class="container">
-                  <div class="skills linux"><p class="left">Linux</p><p>40%</p></div>
-                </div>
-            
-            </div>
-            
-            <div class="skillsect">
-                
-                
-                <h1>Technical</h1>
-            
-                <div class="container">
-                  <div class="skills math"><p class="left">Mathematics</p><p>90%</p></div>
-                </div>
-                
-                <div class="container">
-                  <div class="skills techcom"><p class="left">Technical Communication</p><p>90%</p></div>
-                </div>
-
-                <div class="container">
-                  <div class="skills microsoft"><p class="left">Microsoft Office Suite</p><p>95%</p></div>
-                </div>
-
-              
-                <div class="container">
-                  <div class="skills vs"><p class="left">Visual Studio</p><p>85%</p></div>
-                </div>
-
-                <div class="container">
-                  <div class="skills brackets"><p class="left">Brackets</p><p>90%</p></div>
-                </div>
-                
-                <div class="container">
-                  <div class="skills filezilla"><p class="left">FileZilla</p><p>90%</p></div>
-                </div>
-            
-            </div>
-            
-            <div class="skillsect">
-                
-                
-                <h1>Spoken & Written Languages</h1>
-                
-                <div class="container">
-                  <div class="skills english"><p class="left">English</p><p>100%</p></div>
-                </div>
-
-                
-                <div class="container">
-                  <div class="skills swahili"><p class="left">Swahili</p><p>85%</p></div>
-                </div>
-
-                <div class="container">
-                  <div class="skills spanish"><p class="left">Spanish</p><p>70%</p></div>
-                </div>
-
-                <div class="container">
-                  <div class="skills luo"><p class="left">Luo</p><p>50%</p></div>
-                </div>
-            
-            
-            </div>
-            
-            <div class="skillsect interpersonal">
-                
-                <h1>Interpersonal</h1>
-                
-                <div class="container">
-                  <div class="skills lead"><p class="left">Team Leadership</p><p>95%</p></div>
-                </div>
-                
-                <div class="container">
-                  <div class="skills group"><p class="left">Group Facilitation</p><p>90%</p></div>
-                </div>
-                
-                <div class="container">
-                  <div class="skills team"><p class="left">TeamWork</p><p>95%</p></div>
-                </div>
-
-              
-                <div class="container">
-                  <div class="skills solve"><p class="left">Problem Solving</p><p>85%</p></div>
-                </div>
-
-                <div class="container">
-                  <div class="skills eq"><p class="left">Emotional Intelligence</p><p>85%</p></div>
-                </div>
-                
-                <div class="container">
-                  <div class="skills conflict"><p class="left">Conflict Management</p><p>80%</p></div>
-                </div>
-            
-            </div>
-            
-        </div>
-        
-    </div> 
-    
-    <div id="e"  class="main">
-        
-        <div class="header">
-            
-            <h1>EDUCATION</h1>
-        
-        </div>
-        
-        <div class="content">
-        
-            <div id="logo">
-                
-                <img src="images/logo.png">
-            
-            </div>
-            
-            <div id="text">
-            
-                <h2>Liberty University</h2>
-                <h3>Bachelor of Science: Computer Science </h3>
-                <h4>- Cognates: Software Engineering, Web & Mobile Programming</h4>
-                <p>- Honors Program</p>
-                <p>- Minor: Mathematics</p>
-                <p>- Current GPA: 3.86/4.0</p>
-            
-            </div>
-        
-        </div>
-    
-    </div>
-    
-    <div id="f" class="main">
-
-
-        <div class="header">
-            
-            <h1>PORTFOLIO</h1>
-            
-            <p>In addition to this website, below are some other projects I have worked on. They are in order of complexity.</p>
-            <p>Please refresh the page before selecting a new project to view below.</p>
-        
-        </div>
-        
-        <div id="projects">
-            
-            <div class="project">
-                
-                 <iframe href="index.html" src="project_gaming/index.html" width="100%" height="100%" scrolling="no"></iframe>
-            
-            </div>
-            
-            <div class="project">
-                
-                 <iframe href="index.html" src="project_library/index.html" width="100%" height="100%" scrolling="no"></iframe>
-            
-            </div>
-            <div class="project">
-            
-                <iframe href="index.html" src="project_cars/index.html" width="100%" height="100%" scrolling="no"></iframe>
-            
-            </div>
-            <div class="project">
-            
-                <iframe href="index.html" src="project_christmas/index.html" width="100%" height="100%" scrolling="no"></iframe>
-                
-            </div>
-            <div class="project">
-                
-                <iframe href="index.html" src="project_IoT/index.html" width="100%" height="100%" scrolling="no"></iframe>
-            
-            </div>
-            
-            <div class="project">
-            
-                <button class="btn" id="button1">Optic Gaming</button>    
-            
-            </div>
-            
-            <div class="project">
-            
-                <button class="btn" id="button2">Acme Library</button>    
-            
-            </div>
-            <div class="project">
-            
-                   <button class="btn" id="button3">The Vintage Garage</button>
-            
-            </div>
-            <div class="project">
-                
-                <button class="btn" id="button4">Christmas Countdown</button>
-
-            </div>
-            <div class="project">
-            
-                <button class="btn" id="button5">Internet of Things</button>
-                
-            </div>
-            
-        </div>
-        
-        
-        <div id="iframeText">
-            <h1>Welcome to my portfolio.<br/> The websites you chose to view will appear here once you click the buttons above. <br/>Please refresh the page before you select another website and if you run into technical issues, just refresh this page and try again.</h1>
-        </div>
-
-        <div id="iframeHolder"></div>
-    
-    </div>
-    
-    <div id="g" class="main">
-    
-        <div class="header">
-            
-            <h1>CONTACT</h1>
-        
-        </div>
-        
-        <div id="contact">
-            
-            <div class="social phone"><i class="fa fa-phone"></i></div>
-            <div class="social"><i class="fa fa-envelope"></i></div>
-            <div class="social"><a href="https://www.linkedin.com/in/owiti" target="_blank" class="fa fa-linkedin"></a></div>
-            <div class="social"><a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a></div>
-            <div class="social"><a href="https://github.com/josephowiti7" target="_blank" class="fa fa-github"></a></div>
-            
-            
-            <div class="social phone"><h1>540-621-6698</h1></div>
-            <div class="social"><h1>josephowiti7<br/>@gmail.com</h1></div>
-            <div class="social"><h1>LinkedIn</h1></div>
-            <div class="social"><h1>Facebook</h1></div>
-            <div class="social"><h1>GitHub</h1></div>
-        
-        </div>
-        
-    </div>
-    
-    <div id="z">
-    
-        <h1>Copyright &copy;2019 MarTab Designs</h1>
-        <h2>Joseph Owiti</h2>
-    
-    </div>
-            
-</div> 
-    
-    
-    <!-- STICKY NAVBAR SCRIPT -->
-    
-    <script>
-        window.onscroll = function() {myFunction()};
-
-        var navbar = document.getElementById("b");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-    </script>
-    
-    <!-- PORTFOLIO SCRIPT -->
-    
-            <script type="text/javascript">
-            $(function(){
-                
-                
-                $('#button1').click(function(){ 
-                    if(!$('#iframe').length) {
-                            $('#iframeHolder').html('<iframe id="iframe" src="project_gaming/index.html" width="100%" height="100%"></iframe>');
-                    }
-                });   
-                
-                 $('#button2').click(function(){ 
-                    if(!$('#iframe').length) {
-                            $('#iframeHolder').html('<iframe id="iframe" src="project_library/index.html" width="100%" height="100%"></iframe>');
-                    }
-                });   
-                
-                $('#button3').click(function(){ 
-                    if(!$('#iframe').length) {
-                            $('#iframeHolder').html('<iframe id="iframe" src="project_cars/index.html" width="100%" height="100%"></iframe>');
-                    }
-                });   
-                
-                 $('#button4').click(function(){ 
-                    if(!$('#iframe').length) {
-                            $('#iframeHolder').html('<iframe id="iframe" src="project_christmas/index.html" width="100%" height="100%"></iframe>');
-                    }
-                });   
-                
-                 $('#button5').click(function(){ 
-                    if(!$('#iframe').length) {
-                            $('#iframeHolder').html('<iframe id="iframe" src="project_IoT/index.html" width="100%" height="100%"></iframe>');
-                    }
-                });   
-            });
-            </script>
-        
-</body>
-</html>
-
-<!-- Grid Areas
-
-    <div id="a"></div>
-      
-    <div id="b"></div>
-    
-    <div id="c"></div>    
-    
-    <div id="d"></div>
-    
-    <div id="e"></div>
-    
-    <div id="f"></div>
-
-    <div id="g"></div> 
-    
-    <div id="h"></div>
-        
-    <div id="i"></div>
-    
-    <div id="j"></div>
-        
-    <div id="k"></div>
-
-    <div id="l"></div>
-    
-    <div id="m"></div>
-    
-    <div id="n"></div>
-    
-    <div id="o"></div>
-    
-    <div id="p"></div>
-    
-    <div id="q"></div>
-    
-    <div id="r"></div>
-    
-    <div id="s"></div>
-    
-    <div id="t"></div>
-    
-    <div id="u"></div>
-    
-    <div id="v"></div>
-    
-    <div id="w"></div>
-    
-    <div id="x"></div>
-    
-    <div id="y"></div>
-    
-    <div id="z"></div>
-    
--->    
-
-<!--   
-
-<video autoplay loop id="video-background" muted plays-inline>
-    <source src="/video/.mp4">
-</video>    
-
+     
+<!--
+     <div id="languages">
+     
+        <h1>Built using <span class="lang">HTML</span>, <span class="lang">CSS</span>, <span class="lang">JavaSript</span>, <span class="lang">jQuery</span>, <span class="lang">PHP</span>.</h1>
+     
+     </div>
 -->
+
+
+    <script type="text/javascript">
+
+        (function(){
+
+         var preload = document.getElementById("body");
+         var loading = 0;
+         var id = setInterval(frame, 40);
+
+         function frame(){  
+          if(loading == 100) {
+           clearInterval(id);
+           window.open("index.html", "_self");
+          }
+          else {
+           loading = loading + 1;
+           if(loading == 90) {
+            preload.style.animation = "fadeout 3s ease";
+           }
+          }
+         }
+
+
+        })();
+
+    </script>
+     
+ </body>
+
+</html>

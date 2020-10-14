@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joseph Owiti | Software Engineering Student</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <!-- Logo -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo3.png"/>
+    
+    <!-- Stylesheets -->
+    <link href="css/destyle.css" rel="stylesheet" />
+    <link href="css/blog.css" rel="stylesheet" />
+    
+    <!-- Google Font(s) -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">
+        
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <!-- JavaScript -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+    
+
+</head>
+<body>
+
+<div id="grid">
+
+    <div id="b" class="topnav">
+
+        <div id="nav-left" >
+
+                <span class="logo"><img src="images/logo3.png"></span>
+      
+
+            <span class="name">JOSEPH OWITI</span>
+
+        </div>
+
+        <div id="nav-right">
+                <div class="dropdown">
+                    <button onclick="window.location.href='home.html';" class="dropbtn">HOME</button>
+                    <div class="dropdown-content">
+
+                        <a href="home.html#c">ABOUT</a>
+                        <a href="home.html#d">SKILLS</a>
+                        <a href="home.html#h">EXPERIENCE</a>
+                        <a href="home.html#g">CONTACT</a>
+
+                    </div>
+
+                </div>
+                <a href="projects.html" >PROJECTS</a>
+                <a href="blog.html" class="active">BLOG</a>
+                <a href="home.html#g">CONTACT</a>
+                <a target="_blank" href="Owiti_Resume.pdf" id="resume">RESUME</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction2()">&#9776;</a>
+        </div>
+        
+        <div id="icon-content" class="icon-content">
+        
+            <a href="home.html#a">HOME</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="blog.html">BLOG</a>
+            <a href="home.html#g">CONTACT</a>
+            <a target="_blank" href="Owiti_Resume.pdf" id="resume">RESUME</a>
+
+        </div>
+
+    </div>
+
+    <div id="a">
+
+        <div class="slide-cont" style="background-image:linear-gradient(rgba(34,38,41,0.7),rgba(34,38,41,0.7)),url(../images/blogheader.jpg);background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover; background-position: center top;">
+
+        <h1>BLOG</h1>
+
+        </div>
+
+    </div>
+    
+    <div id="t">
+        <div id="t1" class="header">
+        
+            <p>Blog Plan <BR/> Coming Soon</p>
+        
+        </div>
+
+    </div>
+    
+    <div id="z">
+
+        <h1>Website designed and built by Joseph Owiti.</h1>
+        <h2>Martab Designs 2020</h2>
+
+    </div>
+            
+</div> 
+    
+    
+    <!-- STICKY NAVBAR SCRIPT -->
+    
+     <script>
+         
+
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("b");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        };
+        
+    </script>
+
+    
+    <!-- RESPONSIVE NAVBAR SCRIPT -->
+    
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction2() {
+          document.getElementById("icon-content").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.icon')) {
+            var dropdowns = document.getElementsByClassName("icon-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        
+    </script>
+    
+    <!-- SMOOTH SCROLL SCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+   
+    </body>
+</html>
