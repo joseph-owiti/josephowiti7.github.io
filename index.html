@@ -17,52 +17,44 @@
      
 <style type="text/css">
     body {
-     margin: 0;
-     padding: 0;
-     font-family: 'Share Tech', sans-serif;
-    background-color: black;
+        font-family: 'Share Tech', sans-serif;
+        background-color: black;
         
     }
     .preload{
         border: 2px solid white;
-     width: 100%;
-     height: 100%;
-     background: #333;
-     position: fixed;
-     top: 0;
-     left: 0;
-     z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
         border: 1px solid white;
         
         background-image:linear-gradient(rgba(34,38,41,0.75),rgba(34,38,41,0.75)),url(../images/landpage2.jpg);
-        
         background-position: center center;
         background-repeat:  no-repeat;
         background-attachment: fixed;
         background-size: cover;
         display: block;
-        filter: blur(4px);
-        
-        
-        
+        filter: blur(4px);  
     }
 
     .logo {
-     width: 60%;
-     height: auto;
+        width: 60%;
+        height: auto;
         margin: 3% auto 4% auto;
-     /*text-shadow: -1px 2px 2px #000;*/
-     text-align: center;
-     color: azure;
+        text-align: center;
+        color: azure;
         padding: 10px;
         z-index: 500;
         position: relative;
         
-    
     }
     
     .logo h1 {
-        font-size: 20px;
+        font-size: 1.25em;
         border: 1px solid #86c232;
         border-radius: 10px;
         width: 40%;
@@ -73,12 +65,12 @@
     }
     
     .logo h2 {
-        font-size: 20px;
+        font-size: 1.25em;
         color: whitesmoke;
     }
     
     .logo h3 {
-        font-size: 20px;
+        font-size: 1.25em;
         color: #86c232;
     }
     
@@ -96,10 +88,10 @@
     }
     
     .loader-frame {
-     width: 105px;
-     height: 105px;
-     margin: auto;
-     position: relative;
+        width: 105px;
+        height: 105px;
+        margin: auto;
+        position: relative;
         float:left;
         display: flex;
         justify-content: center;
@@ -107,27 +99,30 @@
         flex-direction: column;
         
     }
+    
     .loader1, .loader2 {
      position: absolute;
      border: 5px solid transparent;
      border-radius: 50%;
         
     }
+    
     .loader1 {
-     width: 95px;
-     height: 95px;
-     border-top: 5px solid black;
-     border-bottom: 5px solid black;
-     animation: clockwisespin 2s linear 3;
+        width: 95px;
+        height: 95px;
+        border-top: 5px solid gray;
+        border-bottom: 5px solid gray;
+        animation: clockwisespin 2s linear 3;
 
     }
+    
     .loader2 {
-     width: 72px;
-     height: 72px;
-     border-left: 5px solid #86c232;
-     border-right: 5px solid #86c232;
-     top: 6.2px; left: 6.2px;
-     animation: anticlockwisespin 2s linear 3;
+        width: 72px;
+        height: 72px;
+        border-left: 5px solid #86c232;
+        border-right: 5px solid #86c232;
+        top: 6.2px; left: 6.2px;
+        animation: anticlockwisespin 2s linear 3;
         padding: 5px;
     }
     
@@ -137,50 +132,23 @@
         z-index: 2;
         object-fit: cover;
         z-index: -500;
-        
     }
     
-    
-/*
-    #languages {
-        width: 100%;
-        height: 100px;
-        position: absolute;
-        z-index: 500;
-        margin: auto;
-        bottom: 0;
-        color: whitesmoke;
-        color: #86c232;
-
-        font-size: 8px;
-        text-align: center;
-        display: flex;
-        justify-content: flex-end;
-        align-items:center;
-        flex-direction: column;
-        
-    }
-    .lang {
-        padding: 5px;
-        border-radius: 5px;
-        border: 1px solid #86c232;
-        color: whitesmoke;
-
-    }
-*/
-
     @keyframes clockwisespin {
      from {transform: rotate(0deg);}
      to {transform: rotate(360deg);}
     }
+    
     @keyframes anticlockwisespin {
      from {transform: rotate(0deg);}
      to {transform: rotate(-360deg);}
     }
+    
     @keyframes fadeout {
      from {opacity: 1;}
      to {opacity: 0;}
     }
+    
 </style>
      
 <!--End CSS -->
@@ -191,33 +159,22 @@
 
  <body id="body">
      
-    <div class = "preload" id ="preload"> </div>
+    <div class = "preload" id ="preload"></div>
 
     <div class ="logo">
         <h3>Hi, my name is </h3>
         <h1>JOSEPH OWITI</h1>
         <h2>Welcome to my Website.</h2>
-      </div>
+    </div>
 
     <div id="loader">
-               <div class = "loader-frame">
-                <div class = "loader1" id = "loader1"></div>
-                <div class = "loader2" id = "loader2">
-                   </div>
-                   <img src="images/logowhite.png">
-               </div>
-                
+        <div class = "loader-frame">
+            <div class = "loader1" id = "loader1"></div>
+            <div class = "loader2" id = "loader2"></div>
+                <img src="images/logowhite.png">
+        </div>
     </div>
      
-<!--
-     <div id="languages">
-     
-        <h1>Built using <span class="lang">HTML</span>, <span class="lang">CSS</span>, <span class="lang">JavaSript</span>, <span class="lang">jQuery</span>, <span class="lang">PHP</span>.</h1>
-     
-     </div>
--->
-
-
     <script type="text/javascript">
 
         (function(){
