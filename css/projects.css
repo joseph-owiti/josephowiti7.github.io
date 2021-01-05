@@ -114,7 +114,7 @@ colors {
 #nav-left {
     width: 30%;
     height: 100%;
-    
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -123,13 +123,14 @@ colors {
 .logo {
     width: 50px;
     height: 100%;
-    padding: 4px;
     margin-right: 5px;
 
 }
 
 .logo img {
-    object-fit: contain;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .sticky .logo {
@@ -144,11 +145,11 @@ colors {
     padding: 0px;
     /*box-shadow: inset 0 0 3px whitesmoke;*/
     font-size: 16px;
-    
+
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
+
 }
 
 .sticky .name {
@@ -162,7 +163,7 @@ colors {
     display: flex;
     justify-content: flex-end;
     align-items: right;
-  
+
 }
 
 #b ul li:hover {
@@ -187,7 +188,7 @@ colors {
 
 /* Add an active class to highlight the current page */
 .active {
-    
+
   color: whitesmoke; 
 }
 
@@ -235,8 +236,8 @@ colors {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-    
-    
+
+
 }
 
 /* Style the links inside the dropdown */
@@ -321,7 +322,7 @@ colors {
         width: 100%;
 }
 
-.icon-content a:hover, .sticky .icon-content a:hover, .sticky .dropbtn:hover {
+.icon-content a:hover, .sticky .icon-content a:hover {
     background-color: rgba(34, 38, 41, 0.4);
     color: whitesmoke;
     border-top: 1px solid #222629;
@@ -437,7 +438,6 @@ colors {
     grid-template-areas: 
     /*   * * * * *     *=200px */
         "f21 f22 f23"
-        "f24 f25 _"
         ;
 }
 
@@ -445,24 +445,18 @@ colors {
     grid-area: f21;
     border: 1px solid #222629;
     box-shadow: 0 9px 6px -6px black;
+    background-color: gainsboro;
 }
+
 #f22 {
     grid-area: f22;
     border: 1px solid #222629;
     box-shadow: 0 9px 6px -6px black;
+    background-color: gainsboro;
 }
+
 #f23 {
     grid-area: f23;
-    border: 1px solid #222629;
-    box-shadow: 0 9px 6px -6px black;
-}
-#f24 {
-    grid-area: f24;
-    border: 1px solid #222629;
-    box-shadow: 0 9px 6px -6px black;
-}
-#f25 {
-    grid-area: f25;
     border: 1px solid #222629;
     box-shadow: 0 9px 6px -6px black;
     background-color: gainsboro;
@@ -525,7 +519,7 @@ colors {
 .proj img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .projc {
@@ -545,7 +539,7 @@ colors {
   bottom: 0;
   right: 0;
   background-color: rgba(0, 0, 0, .80);
-  z-index: 500000;
+  z-index: 9999;
   visibility: hidden;
   opacity: 0;
   overflow: hiden;
@@ -558,14 +552,25 @@ colors {
     margin-top: 40px;
     display: flex;
     align-items: center;
-    width: 85%;
-    height: 85%;
+    width: 50%;
+    height: 60%;
+    z-index: 99;
     background-color: rgb(224,224,224);
     transform: rotate(32deg);
     transition: .64s ease-in-out;   
     border: 2px solid #86c232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: visible;
     
   }
+
+#iframeHolder {
+    width: 100%;
+    height: 100%;
+}
 
 .popup:target {
     visibility: visible;
@@ -579,15 +584,16 @@ colors {
   
 .popup__close {
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: -25px;
+    top: -25px;
     width: 3rem;
     height: 3rem;
     font-size: 20px;
     font-weight: ;
     border-radius: 100%;
     background-color: #86c232; 
-    z-index: 999;
+    border: 1px solid #222629;
+    z-index: 99999;
     color: #222629;
     line-height: 3rem;
     text-align: center;
@@ -598,8 +604,8 @@ colors {
 .popup__close:hover {
     color: #86c232;
     background-color: #222629;
+    border: 1px solid #86c232;
 }
-
 
 
 

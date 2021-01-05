@@ -9,7 +9,7 @@
 
     
     <!-- Logo -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/logo3.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logoblack.png"/>
     
     <!-- Stylesheets -->
     <link href="css/destyle.css" rel="stylesheet" />
@@ -36,45 +36,41 @@
 
 <div id="grid">
 
-    <div id="b" class="topnav">
+    <div id="b">
 
         <div id="nav-left" >
 
-                <span class="logo"><img src="images/logo3.png"></span>
-        
-
+            <a class="logo" href="index.html"><img src="images/logowhite.png" onlick="index.html"></a>
+    
             <span class="name">JOSEPH OWITI</span>
 
         </div>
 
-        <div id="nav-right">
+        <div id="nav-right" class="topnav">
                 <div class="dropdown">
                     <button onclick="window.location.href='home.html';" class="dropbtn">HOME</button>
                     <div class="dropdown-content">
 
-                        <a href="home.html#c">ABOUT</a>
-                        <a href="home.html#d">SKILLS</a>
-                        <a href="home.html#h">EXPERIENCE</a>
-                        <a href="home.html#g">CONTACT</a>
+                        <a id="about" href="home.html#c">ABOUT</a>
+                        <a id="skills" href="home.html#d">SKILLS</a>
+                        <a id="experience" href="home.html#h">EXPERIENCE</a>
+                        <a class="contact" href="home.html#g">CONTACT</a>
 
                     </div>
 
                 </div>
                 <a href="projects.html" class="active">PROJECTS</a>
-                <a href="blog.html">BLOG</a>
-                <a href="home.html#g">CONTACT</a>
+                <a class="contact" href="home.html#g">CONTACT</a>
                 <a target="_blank" href="Owiti_Resume.pdf" id="resume">RESUME</a>
-
-
-
+            
             <a href="javascript:void(0);" class="icon" onclick="myFunction2()">&#9776;</a>
+            
         </div>
         
         <div id="icon-content" class="icon-content">
         
             <a href="home.html#a">HOME</a>
             <a href="projects.html">PROJECTS</a>
-            <a href="blog.html">BLOG</a>
             <a href="home.html#g">CONTACT</a>
             <a target="_blank" href="Owiti_Resume.pdf" id="resume">RESUME</a>
 
@@ -84,11 +80,9 @@
 
     <div id="a">
 
-        <div class="slide-cont" style="background-image:linear-gradient(rgba(34,38,41,0.7),rgba(34,38,41,0.7)),url(../images/projheader.png);background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover; background-position: center center;">
+        <div class="slide-cont" style="background-image:linear-gradient(rgba(34,38,41,0.7),rgba(34,38,41,0.7)),url(../images/projheader.png);background-repeat: no-repeat;background-attachment: fixed; background-size: cover; background-position: center center;">
 
-        <h1>PROJECTS</h1>
+            <h1>PROJECTS</h1>
 
         </div>
 
@@ -104,109 +98,65 @@
         
         <div id="f2">
             
-            
             <div id="f21" class="proj">
                 
                 <div class="projol">
-                
-                    <h2>Optic Gaming</h2>
                     
-                    <p>I am Joseph Paul Owiti and I was born on January 10, 1998. For the longest time, my home was near a western city in Kenya called </p>
+                    <h2>Software Engineering Capstone</h2>
                     
+                    <p>I have been collaborating with a team to build a Machine Learning application that provides real-time data analysis for a local software company</p>
                     
-                    <a class="projbutton" id="button1" href="#popup">View Project</a>
+                    <a class="projbutton" id="button2" href="#popup">Read More</a>
                 
                 </div>
                 
                 <div class="projc">
-                
-                    <iframe src="project_gaming/index.html" width="100%" height="100%" scrolling="no"></iframe>
-            
-            
+                    <img src="images/libertynamelogo.jpg">
                 </div>
             
             </div>
             
             <div id="f22" class="proj">
-                
-                <div class="projol">
-                    
-                    <h2>Acme Library</h2>
-                    
-                    <p>I am Joseph Paul Owiti and I was born on January 10, 1998. For the longest time, my home was near a western city in Kenya called </p>
-                    
-                    <a class="projbutton" id="button2" href="#popup">View Project</a>
-                
-                </div>
-                
-                <div class="projc">
-                    <iframe href="index.html" src="project_library/index.html" width="100%" height="100%"
-                    scrolling="no"
-                        ></iframe>
-                </div>
-            
-            </div>
-            
-            <div id="f23" class="proj">
-            
-                <div class="projol">
-                
-                    <h2>The Vintage Garage</h2>
-                    
-                    <p>I am Joseph Paul Owiti and I was born on January 10, 1998. For the longest time, my home was near a western city in Kenya called </p>
-                    
-                    <a class="projbutton" id="button3" href="#popup">View Project</a>
-                
-                </div>
-                
-                <div class="projc">
-                    <iframe href="index.html" src="project_cars/index.html" width="100%" height="100%" scrolling="no"></iframe>
-                </div>
-                
-            </div>
-            
-            <div id="f24" class="proj">
-            
-                <div class="projol">
-                
-                    <h2>Internet of Things</h2>
-                    
-                    <p>I am Joseph Paul Owiti and I was born on January 10, 1998. For the longest time, my home was near a western city in Kenya called </p>
-                    
-                    <a class="projbutton" id="button5" href="#popup">View Project</a>
-                
-                </div>
-                
-                <div class="projc">
-                    <iframe href="index.html" src="project_IoT/index.html" width="100%" height="100%" scrolling="no"></iframe>
-                </div>
-            
-            </div> 
-            
-            <div id="f25" class="proj">
             
                 <div class="projol">
                 
                     <h2>Elder Research</h2>
                     
-                    <p>I am Joseph Paul Owiti and I was born on January 10, 1998. For the longest time, my home was near a western city in Kenya called </p>
+                    <p>I utilized Amazon Web Services, Python, and front-end development to achieve automatic service deployment</p>
                     
-                    <a class="projbutton" id="button4" href="#popup">View Project</a>
+                    <a class="projbutton" id="button4" href="#popup">Read More</a>
                 
                 </div>
                 
                 <div class="projc">
-                    <img src="images/ElderResearch.png">
+                    <img src="images/eri.jfif">
+                </div>
+            
+            </div> 
+            
+            <div id="f23" class="proj">
+            
+                <div class="projol">
+                
+                    <h2>Elder Research</h2>
+                    
+                    <p>I used JavaScript's D3 Library to create an interactive force-directed graph to visualize the diverse and overlapping interests among the company's employees</p>
+                    
+                    <a class="projbutton" id="button4" href="#popup">Read More</a>
+                
+                </div>
+                
+                <div class="projc">
+                    <img src="images/eri.jfif">
                 </div>
             
 
             </div>
             
             <div class="popup" id="popup">
-                <a class="popup__close" id="popup__close" href="#f">&#x2716;</a>
-                <div class="popup-inner" id="iframeHolder">
-                  
-  
+                <div class="popup-inner">
+                    <a class="popup__close" id="popup__close" href="#f">&#x2716;</a>
+                    <div id="iframeHolder"></div>
                 </div>
             </div>
                 
@@ -214,8 +164,6 @@
         
     
     </div>
-    
-
     
     <div id="z">
 
@@ -226,12 +174,9 @@
             
 </div> 
      
-    
     <!-- STICKY NAVBAR SCRIPT -->
-    
      <script>
          
-
         window.onscroll = function() {myFunction()};
 
         var navbar = document.getElementById("b");
@@ -247,9 +192,7 @@
         
     </script>
 
-    
     <!-- RESPONSIVE NAVBAR SCRIPT -->
-    
     <script>
         /* When the user clicks on the button,
         toggle between hiding and showing the dropdown content */
@@ -273,89 +216,57 @@
         
     </script>
     
-    
-     <!-- POPUP SCRIPT -->
-    
+    <!-- POPUP SCRIPT -->
     <script type="text/javascript">
         
             $(function(){
-
-                $('#button1').click(function(){ 
-                    if(!$('#iframe').length) {
-                            $('#iframeHolder').html('<iframe id="iframe" src="project_gaming/index.html" width="100%" height="100%"></iframe>');
-                    }
-                });   
-                
-                 $('#button2').click(function(){ 
-                    if(!$('#iframe').length) {
-                            $('#iframeHolder').html('<iframe id="iframe" src="project_library/index.html" width="100%" height="100%"></iframe>');
-                    }
-                });   
-                
-                $('#button3').click(function(){ 
-                    if(!$('#iframe').length) {
-                            $('#iframeHolder').html('<iframe id="iframe" src="project_cars/index.html" width="100%" height="100%"></iframe>');
-                    }
-                });   
-                
-                 $('#button4').click(function(){ 
-                    if(!$('#iframe').length) {
-                            $('#iframeHolder').html('<iframe id="iframe" src="project_christmas/index.html" width="100%" height="100%"></iframe>');
-                    }
-                });   
-                
-                 $('#button5').click(function(){ 
-                                         
-                     if(!$('#iframe').length) {
-                        
-                            $('#iframeHolder').html('<iframe id="iframe" src="project_IoT/index.html" width="100%" height="100%"></iframe>');
-                    }
-                });
                 
                 $('#popup__close').click(function(){
-                    
                     $("#iframe").remove();
-                                                     
                 });
            
             });
         
         
-            
-        
-        
 </script>
-    
     
     <!-- SMOOTH SCROLL SCRIPT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
+        $(document).ready(function(){
+             $( document ).ready(function() {
+              $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                  event.preventDefault();
+                  var hash = this.hash;
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+                    window.location.hash = hash;
+                  });
+                }
+              });
+            }); 
+        });
+        
+        $("#about").click(function() {
+            $('html,body').animate({
+                scrollTop: $("home.html#c").offset().top},'slow');
+        });   
+        $("#skills").click(function() {
+            $('html,body').animate({
+                scrollTop: $("home.html#d").offset().top},'slow');
+        }); 
+        $("#experience").click(function() {
+            $('html,body').animate({
+                scrollTop: $("home.html#g").offset().top},'slow');
+        }); 
+        $(".contact").click(function() {
+            $('html,body').animate({
+                scrollTop: $("home.html#h").offset().top},'slow');
+        }); 
 
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
     </script>
    
-        
     </body>
 </html>

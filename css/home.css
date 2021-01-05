@@ -11,7 +11,7 @@
     grid-row-gap: 0px;
     grid-column-gap: 0px;
     grid-template-columns: repeat(1, 100%);
-    grid-auto-rows: 50px 620px 800px 650px 1350px 500px 250px;
+    grid-auto-rows: 50px 620px 750px 600px 1350px 500px 250px;
     grid-template-areas: 
     /*   * * * * *     *=200px */
         "b"
@@ -44,14 +44,15 @@
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     
-    z-index: 10;
+    z-index: 9;
     height:auto;
     display: grid;
     grid-row-gap: 0px;
     grid-column-gap: 0px;
     grid-template-columns: repeat(1, 100%);
-    grid-auto-rows: 100px 350px 250px;
+    grid-auto-rows: 100px 330px 250px;
     grid-template-areas: 
     /*   * * * * *     *=200px */
         "i"
@@ -68,15 +69,14 @@
     
     background-color: rgb(224,224,224);
     padding: 60px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
-    z-index: 9;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px -6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 10;
     height:auto;
     display: grid;
     grid-row-gap: 25px;
     grid-column-gap: 0px;
     grid-template-columns: repeat(5, 20%);
-    grid-auto-rows: 130px 420px;
+    grid-auto-rows: 100px 360px;
     grid-template-areas: 
     /*   * * * * *     *=200px */
         "l l l l l"
@@ -88,8 +88,7 @@
 #d {
     grid-area: d;
     max-width: 1200px;
-    margin: 0px auto;
-    
+    margin: 0px auto;    
     background-color: rgb(224,224,224);
     padding: 60px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -154,7 +153,7 @@ body {
     color:#111;
     background-color: silver;
     font-family: 'Share Tech', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
 
 }
 
@@ -180,8 +179,6 @@ colors {
     
 
 }
-
-
 
 
 
@@ -345,7 +342,6 @@ colors {
     border-top: 1px solid #222629;
 }
 
-
 .sticky #nav-right a:hover {
     background-color: rgba(34, 38, 41, 0.4);
     border-top: 1px solid #222629;
@@ -368,7 +364,6 @@ colors {
     height: 40px;
     transition: 5s ease-out;
 }
-
 
 
 
@@ -396,7 +391,6 @@ colors {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 100;
 }
-
 
 .icon-content a, .sticky .icon-content a {
     color: black;
@@ -442,20 +436,14 @@ colors {
 
 
 
-
-
-
 /* A - HEADING */
 
 #a {
-    align-content: center;
     text-align: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     margin-top: -50px;
     
-  
-   
 }
 
 #a h1 {
@@ -465,7 +453,15 @@ colors {
     width: 65%;
     padding: 15px;
     border-radius: 10px;
+    margin-bottom: 20px;
     border: 2px solid #61892f;
+}
+
+#a h2 {
+    font-size: 3vw;
+    padding: 10px;
+    border-radius: 10px;
+    color: #86c232;
 }
 
 #a > div { 
@@ -476,9 +472,9 @@ colors {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
 }
-
 
 
 
@@ -504,9 +500,6 @@ colors {
 
 
 
-
-
-
 /* C - ABOUT */
 
 #i {
@@ -515,8 +508,35 @@ colors {
 
 #j {
     grid-area: j;
-    padding: 5px;
+    padding: 25px 80px;
+    overflow: scroll;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+            box-shadow: inset -0px -10px 9px -13px gray,
+         -0px -10px 9px -13px gray;
 
+
+}
+#j::-webkit-scrollbar {width: 0 !important}
+
+
+#j p {
+    margin: 0 auto 5px auto;
+    line-height: 25px;
+    padding: 0px 10px;
+
+    
+}
+
+#j ul {
+    margin: auto;
+    column-count: 1;
+    padding: 10px 30px;
+    line-height: 23px;
+}
+
+#j ul li {
+    list-style-type: square;
 }
 
 #k {
@@ -546,90 +566,12 @@ colors {
     grid-area: s4;
 }
 
-.table {
-    height: 100%;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-}
-
-/* Style the tab */
-.tab {
-  float: left;
-  border-left: 2px solid darkgray;
-  background-color: #e8e8e8;
-  width: 25%;
-  height: 100%;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-    padding: 10px;
-    height: 25%;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-
-}
-
-.firstb {
-    border-top-left-radius: 7px;
-}
-
-.lastb {
-    border-bottom-left-radius: 7px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: rgb(34, 38, 41, 0.1);
-    border-left: 3px solid darkgray;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: rgb(34, 38, 41, 0.1);
-        border-left: 3px solid darkgray;
-
-}
-
-/* Style the tab content */
-.tabcontent {
-    padding-left: 60px;
-    padding-right: 60px;
-    background-color: rgb(192,192,192, 0.2);
-    width: 75%;
-    border-left: none;
-    height: 100%;
-    box-shadow: inset 0 0px 8px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-
-}
-
-.tabcontent p {
-    top: 30%;
-    
-}
 
 .aboverlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgb(34, 38, 41, 0.4);
+    background-color: rgb(34, 38, 41, 0.3);
     z-index: 50;
     border-radius: 100%;
 }
@@ -653,10 +595,22 @@ colors {
 
 }
 
-#s4 img {
+#s3 img {
     object-position: bottom;
 }
 
+.aboutpic :before {
+  content:"";
+  z-index: -1;
+  position: absolute;
+  bottom: -60%;
+  width: inherit;
+  height: inherit;
+  border-radius: 40%;
+  background: rgba(0,0,0,.55);  
+  transform:  scaleX(0.35) scaleY(0.03);
+  filter: blur(35px);
+}
 
 
 
@@ -683,11 +637,13 @@ colors {
 #n {
     grid-area: n;
     padding: 0px;
+    height: auto;
     
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    
     
 }
 
@@ -700,12 +656,20 @@ colors {
 }
 
 #expcontainer {
+    position: relative;
     width: 90%;
-    height: 100%;
     padding: 10px;
-    
+    overflow: scroll;
+    top: 0;
+    box-shadow: inset -0px -10px 9px -13px gray;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+
+
     
 }
+
+#expcontainer::-webkit-scrollbar {width: 0 !important}
 
 .collapsible {
   color: black;
@@ -746,6 +710,7 @@ colors {
     right: 0;
     width: 95%;
     margin-left: 5%;
+    z-index: 11;
     justify-self: end;
     height: auto;
   overflow: hidden;
@@ -754,7 +719,6 @@ colors {
     background-color: #e8e8e8;
     border-bottom: 1px solid darkgray;
  
-
 }
 
 .expcontent h1 {
@@ -802,7 +766,7 @@ a.company:before {
     width: 100%;
 }
 
-.expcontent ul a {
+.expcontent .explink {
     padding: 8px 8px;
     background-color: rgb(34, 38, 41);
     color: #86c232;
@@ -811,6 +775,7 @@ a.company:before {
     margin-bottom: 25px;
     font-weight: 550;
     float: right;
+    text-decoration: none;
 }
 
 .expcontent ul a:hover {
@@ -844,7 +809,7 @@ a.company:before {
   bottom: 0;
   right: 0;
   background-color: rgba(0, 0, 0, .80);
-  z-index: 500000;
+  z-index: 9999;
   visibility: hidden;
   opacity: 0;
   overflow: hiden;
@@ -857,19 +822,25 @@ a.company:before {
     margin-top: 40px;
     display: flex;
     align-items: center;
-    width: 85%;
-    height: 85%;
+    width: 50%;
+    height: 70%;
+    z-index: 99;
     background-color: rgb(224,224,224);
     transform: rotate(32deg);
     transition: .64s ease-in-out;   
     border: 2px solid #86c232;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: visible;
     
   }
+
+#iframeHolder {
+    width: 100%;
+    height: 100%;
+}
 
 .popup:target {
     visibility: visible;
@@ -883,15 +854,16 @@ a.company:before {
   
 .popup__close {
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: -25px;
+    top: -25px;
     width: 3rem;
     height: 3rem;
     font-size: 20px;
     font-weight: ;
     border-radius: 100%;
     background-color: #86c232; 
-    z-index: 999;
+    border: 1px solid #222629;
+    z-index: 99999;
     color: #222629;
     line-height: 3rem;
     text-align: center;
@@ -902,7 +874,12 @@ a.company:before {
 .popup__close:hover {
     color: #86c232;
     background-color: #222629;
+    border: 1px solid #86c232;
 }
+
+
+
+
 
 
 
@@ -951,18 +928,22 @@ a.company:before {
     margin: auto;
     z-index: 999;
     font-size: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#r1 .sklogo {
-    margin: auto;
-    float: left;
-}
+
 .sklogo {
     width: 130px;
     height: 130px;
     border-radius: 100%;
     background-color: rgb(34, 38, 41);
     padding: 40px;
+}
+
+#r1 .sklogo {
+    margin: auto;
 }
 
 .sklogo img {
@@ -1112,14 +1093,13 @@ a.company:before {
 
 .label:hover {
  
-    font-size: 23px;
+    font-size: 20px;
     width: 112px;
     height: 112px;
     top:4px;
     left:4px;
     transition-duration: 0.3s;
 }
-
 
 
 
@@ -1134,7 +1114,7 @@ a.company:before {
 
 #s {
     grid-area: s;
-    
+        
 }
 
 #t {
@@ -1144,6 +1124,14 @@ a.company:before {
 #g .header h1 {
     width: 80%;
     color: #222629;
+    margin-bottom: 10px;
+}
+
+#s h2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    width: 60%;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -1195,12 +1183,13 @@ input[type=submit]:hover {
     font-family: 'Share Tech', sans-serif;
     z-index: 10;
     margin:0px auto 0px auto;
-    width:67%;
-    height:100%;
+    max-width: 80%;
+    min-width: 80%;
+    height: 100%;
     text-align: center;
     justify-content: center;
     padding-left: 5%;
-    
+    padding-top: 20px;    
 }
 
 .social {
@@ -1208,7 +1197,6 @@ input[type=submit]:hover {
     width: 60px;
     border: 1px solid #222629;
     float: left;
-    justify-content: center;
     margin-bottom: 22px;
     background-color: rgba(34, 38, 41, 0.2);
     box-shadow: 0 7px 6px -6px black;
@@ -1267,16 +1255,7 @@ input[type=submit]:hover {
     color: rgb(59,86,157);
 }
 
-#inbox {
-    width: 100%;
-    height: auto;
-    bottom: 0;
-    float: left;
-    margin-top: 20px;
-    margin-left: -15px;
-    
-    
-}
+
 
 
 
@@ -1351,20 +1330,6 @@ input[type=submit]:hover {
     }
     
     
-    .table {
-        width: 90%;
-    }
-    
-    .tabcontent {
-        padding: 20px;
-        text-align: center;
-
-    }
-    .tabcontent p {
-        top: 10%;
-    }
-    
-    
     #k {
         margin: auto;
         height: 450px;
@@ -1405,6 +1370,10 @@ input[type=submit]:hover {
     #expcontainer {
         width: 100%;
         margin: auto;
+    }
+    
+    .popup {
+        z-index: 100;
     }
     
     

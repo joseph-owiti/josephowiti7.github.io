@@ -2,3 +2,4 @@
 [1008/163637.482:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\josep\AppData\Roaming\Brackets\live-dev-profile\Crashpad\attachments\03efe693-7f84-4baf-88a7-b9f7517f6d70: The system cannot find the path specified. (0x3)
 [1008/163637.484:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\josep\AppData\Roaming\Brackets\live-dev-profile\Crashpad\attachments\b79e9859-413c-417d-bc65-899ef386a504: The system cannot find the path specified. (0x3)
 [1018/152604.257:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1229/193625.020:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
