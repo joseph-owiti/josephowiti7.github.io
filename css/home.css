@@ -479,7 +479,7 @@ colors {
 #header {
     background-image:linear-gradient(rgba(34,38,41,0.7),rgba(34,38,41,0.7)),url(../images/seheader.jpg);
     background-repeat: no-repeat;
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-size: cover; 
     background-position: center center;
 }
@@ -1313,7 +1313,9 @@ input[type=submit]:hover {
     }
     
     #header {
-        background-position: center bottom;
+        background-attachment: inherit;
+        background-size: auto; 
+        background-position: center center;
     }
     
     #a h1 {

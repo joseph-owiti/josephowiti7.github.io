@@ -660,7 +660,9 @@ colors {
     }
     
     #header {
-        background-position: center left;
+        background-attachment: inherit;
+        background-size: auto; 
+        background-position: center center;
     }
     
     #a h1 {
