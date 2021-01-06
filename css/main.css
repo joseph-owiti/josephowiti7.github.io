@@ -1,134 +1,143 @@
-   body {
-        font-family: 'Share Tech', sans-serif;
-        background-color: black;
-        
-    }
-        
-    .preload{
-        border: 2px solid white;
-        width: 100%;
-        height: 100%;
-        background: #333;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        border: 1px solid white;
-        
-        background-image:linear-gradient(rgba(34,38,41,0.75),rgba(34,38,41,0.75)),url(../images/landpage2.jpg);
-        background-position: center center;
-        background-repeat:  no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        display: block;
-        filter: blur(4px);  
-    }
+body {
+    font-family: 'Share Tech', sans-serif;
+    background-color: black;
 
-    .logo {
-        height: auto;
-        margin: 3% auto 4% auto;
-        text-align: center;
-        color: azure;
-        padding: 10px;
-        z-index: 500;
-        width: 500px;
-        position: relative;
-    }
-    
-    .logo h1 {
-        font-size: 25px;
-        border: 1px solid #86c232;
-        border-radius: 10px;
-        margin: auto;
-        min-width: 20%;
-        max-width: 35%;
-        padding: 15px 20px;
-        color: whitesmoke;
-        
-    }
-    
-    .logo h2 {
-        font-size: 25px;
-        color: whitesmoke;
-    }
-    
-    .logo h3 {
-        font-size: 25px;
-        color: #86c232;
-    }
-    
-    #loader {
-        width: 26%;
-        height: 180px;
-        margin: auto;
-        z-index: 500;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        flex-direction: column;
-        
-    }
-    
-    .loader-frame {
-        width: 105px;
-        height: 105px;
-        margin: auto;
-        position: relative;
-        float:left;
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        flex-direction: column;
-        
-    }
-    
-    .loader1, .loader2 {
-     position: absolute;
-     border: 5px solid transparent;
-     border-radius: 50%;
-        
-    }
-    
-    .loader1 {
-        width: 95px;
-        height: 95px;
-        border-left: 5px solid #61892f;
-        border-right: 5px solid #61892f;
-        animation: clockwisespin 2s linear 3;
+}
 
+.preload{
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border: 1px solid white;
+
+    background-image:linear-gradient(rgba(34,38,41,0.75),rgba(34,38,41,0.75)),url(../images/landpage2.jpg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: block;
+    filter: blur(4px);  
+}
+
+.logo {
+    height: auto;
+    margin: 3% auto 4% auto;
+    text-align: center;
+    color: azure;
+    padding: 10px;
+    z-index: 500;
+    width: 500px;
+    position: relative;
+}
+
+.logo h1 {
+    font-size: 25px;
+    border: 1px solid #86c232;
+    border-radius: 10px;
+    margin: auto;
+    min-width: 20%;
+    max-width: 35%;
+    padding: 15px 20px;
+    color: whitesmoke;
+
+}
+
+.logo h2 {
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.logo h3 {
+    font-size: 25px;
+    color: #86c232;
+}
+
+#loader {
+    width: 26%;
+    height: 180px;
+    margin: auto;
+    z-index: 500;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+
+}
+
+.loader-frame {
+    width: 105px;
+    height: 105px;
+    margin: auto;
+    position: relative;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+
+}
+
+.loader1, .loader2 {
+ position: absolute;
+ border: 5px solid transparent;
+ border-radius: 50%;
+
+}
+
+.loader1 {
+    width: 95px;
+    height: 95px;
+    border-left: 5px solid #61892f;
+    border-right: 5px solid #61892f;
+    animation: clockwisespin 2s linear 3;
+
+}
+
+.loader2 {
+    width: 72px;
+    height: 72px;
+    border-left: 5px solid #86c232;
+    border-right: 5px solid #86c232;
+    top: 6.2px; left: 6.2px;
+    animation: anticlockwisespin 2s linear 3;
+    padding: 5px;
+}
+
+.loader-frame img {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    object-fit: cover;
+    z-index: -500;
+}
+
+@keyframes clockwisespin {
+ from {transform: rotate(0deg);}
+ to {transform: rotate(360deg);}
+}
+
+@keyframes anticlockwisespin {
+ from {transform: rotate(0deg);}
+ to {transform: rotate(-360deg);}
+}
+
+@keyframes fadeout {
+ from {opacity: 1;}
+ to {opacity: 0;}
+}
+
+@media only screen and (max-width:800px) {
+    
+    .logo h1, .logo h2, .logo h3 {
+        font-size: 30px;
     }
     
-    .loader2 {
-        width: 72px;
-        height: 72px;
-        border-left: 5px solid #86c232;
-        border-right: 5px solid #86c232;
-        top: 6.2px; left: 6.2px;
-        animation: anticlockwisespin 2s linear 3;
-        padding: 5px;
-    }
-    
-    .loader-frame img {
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        object-fit: cover;
-        z-index: -500;
-    }
-    
-    @keyframes clockwisespin {
-     from {transform: rotate(0deg);}
-     to {transform: rotate(360deg);}
-    }
-    
-    @keyframes anticlockwisespin {
-     from {transform: rotate(0deg);}
-     to {transform: rotate(-360deg);}
-    }
-    
-    @keyframes fadeout {
-     from {opacity: 1;}
-     to {opacity: 0;}
-    }
+}
+
     
