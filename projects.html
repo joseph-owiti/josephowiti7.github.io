@@ -51,9 +51,9 @@
                     <button onclick="window.location.href='home.html';" class="dropbtn">HOME</button>
                     <div class="dropdown-content">
 
-                        <a id="about" href="home.html#c">ABOUT</a>
-                        <a id="skills" href="home.html#d">SKILLS</a>
-                        <a id="experience" href="home.html#h">EXPERIENCE</a>
+                        <a class="about" href="home.html#c">ABOUT</a>
+                        <a class="skills" href="home.html#d">SKILLS</a>
+                        <a class="experience" href="home.html#h">EXPERIENCE</a>
                         <a class="contact" href="home.html#g">CONTACT</a>
 
                     </div>
@@ -69,9 +69,12 @@
         
         <div id="icon-content" class="icon-content">
         
-            <a href="home.html#a">HOME</a>
+            <a class="home" href="home.html">HOME</a>
+            <a class="about" href="home.html#c"><em>-ABOUT-</em></a>
+            <a class="skills" href="home.html#d"><em>-SKILLS-</em></a>
+            <a class="experience" href="home.html#h"><em>-EXPERIENCE-</em></a>
             <a href="projects.html">PROJECTS</a>
-            <a href="home.html#g">CONTACT</a>
+            <a class="contact" href="home.html#g">CONTACT</a>
             <a target="_blank" href="Owiti_Resume.pdf" id="resume">RESUME</a>
 
         </div>
@@ -249,11 +252,11 @@
             }); 
         });
         
-        $("#about").click(function() {
+        $(".about").click(function() {
             $('html,body').animate({
                 scrollTop: $("home.html#c").offset().top},'slow');
         });   
-        $("#skills").click(function() {
+        $(".skills").click(function() {
             $('html,body').animate({
                 scrollTop: $("home.html#d").offset().top},'slow');
         }); 
@@ -265,6 +268,10 @@
             $('html,body').animate({
                 scrollTop: $("home.html#h").offset().top},'slow');
         }); 
+        $(".home").click(function() {
+            $('html,body').animate({
+                scrollTop: $("home.html").offset().top},'slow');
+        });
 
     </script>
    
