@@ -12,7 +12,7 @@
       gtag('config', 'G-GK1P1F77NW');
     </script>
     
-    <title>Joseph Owiti | Software Engineering Student</title>
+    <title>Joseph Owiti | Software Engineering</title>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -27,10 +27,8 @@
     
     <!-- Google Font(s) -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    
     <link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">
         
-    
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -38,7 +36,8 @@
     
     <!-- JavaScript -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
 
@@ -65,7 +64,6 @@
                         <a class="contact" href="home.html#g">CONTACT</a>
 
                     </div>
-
                 </div>
                 <a href="projects.html" class="active">PROJECTS</a>
                 <a class="contact" href="home.html#g">CONTACT</a>
@@ -184,104 +182,9 @@
     </div>
             
 </div> 
-     
-    <!-- STICKY NAVBAR SCRIPT -->
-     <script>
-         
-        window.onscroll = function() {myFunction()};
-
-        var navbar = document.getElementById("b");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        };
-        
-    </script>
-
-    <!-- RESPONSIVE NAVBAR SCRIPT -->
-    <script>
-        /* When the user clicks on the button,
-        toggle between hiding and showing the dropdown content */
-        function myFunction2() {
-          document.getElementById("icon-content").classList.toggle("show");
-        }
-
-        // Close the dropdown menu if the user clicks outside of it
-        window.onclick = function(event) {
-          if (!event.target.matches('.icon')) {
-            var dropdowns = document.getElementsByClassName("icon-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
-            }
-          }
-        }
-        
-    </script>
     
-    <!-- POPUP SCRIPT -->
-    <script type="text/javascript">
-        
-            $(function(){
-                
-                $('#popup__close').click(function(){
-                    $("#iframe").remove();
-                });
-           
-            });
-        
-        
-</script>
-    
-    <!-- SMOOTH SCROLL SCRIPT -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-             $( document ).ready(function() {
-              $("a").on('click', function(event) {
-                if (this.hash !== "") {
-                  event.preventDefault();
-                  var hash = this.hash;
-                  $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                  }, 800, function(){
-                    window.location.hash = hash;
-                  });
-                }
-              });
-            }); 
-        });
-        
-        $(".about").click(function() {
-            $('html,body').animate({
-                scrollTop: $("home.html#c").offset().top},'slow');
-        });   
-        $(".skills").click(function() {
-            $('html,body').animate({
-                scrollTop: $("home.html#d").offset().top},'slow');
-        }); 
-        $("#experience").click(function() {
-            $('html,body').animate({
-                scrollTop: $("home.html#g").offset().top},'slow');
-        }); 
-        $(".contact").click(function() {
-            $('html,body').animate({
-                scrollTop: $("home.html#h").offset().top},'slow');
-        }); 
-        $(".home").click(function() {
-            $('html,body').animate({
-                scrollTop: $("home.html").offset().top},'slow');
-        });
+    <!-- JS -->
+    <script type="text/javascript" src="js/main.js"></script>
 
-    </script>
-       
-    </body>
+</body>
 </html>
