@@ -194,16 +194,15 @@ colors {
 }
 
 #nav-left {
-    width: 30%;
+    min-width: 30%;
     height: 100%;
-    
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 .logo {
-    width: 50px;
+    width: 56px;
     height: 100%;
     margin-right: 5px;
 
@@ -217,6 +216,7 @@ colors {
  
 .sticky .logo {
     color: #86C232;
+    width: 50px;
 }
 
 .name {
@@ -244,8 +244,7 @@ colors {
     width: 70%;
     display: flex;
     justify-content: flex-end;
-    align-items: right;
-  
+    align-items: right;  
 }
 
 #b ul li:hover {
@@ -288,6 +287,7 @@ colors {
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
+    font-size: 17px;
 }
 
 /* Dropdown container - needed to position the dropdown content */
@@ -447,7 +447,7 @@ colors {
 }
 
 #a h1 {
-    font-size: 4.5vw;
+    font-size: 4vw;
     color: darkgray;
     color:whitesmoke;
     width: 65%;
@@ -458,7 +458,7 @@ colors {
 }
 
 #a h2 {
-    font-size: 3vw;
+    font-size: 2.5vw;
     padding: 10px;
     border-radius: 10px;
     color: #86c232;
@@ -476,6 +476,13 @@ colors {
 
 }
 
+#header {
+    background-image:linear-gradient(rgba(34,38,41,0.7),rgba(34,38,41,0.7)),url(../images/seheader.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover; 
+    background-position: center center;
+}
 
 
 
@@ -497,7 +504,6 @@ colors {
     padding: 15px;
     text-align: center;
 }
-
 
 
 /* C - ABOUT */
@@ -881,9 +887,6 @@ a.company:before {
 
 
 
-
-
-
 /* D - SKILLS */
 
 #o {
@@ -1258,8 +1261,6 @@ input[type=submit]:hover {
 
 
 
-
-
 /* Z - FOOTER */
 
 #z {
@@ -1309,6 +1310,18 @@ input[type=submit]:hover {
     
     #b, #a, #z {
         width: 100%;
+    }
+    
+    #header {
+        background-position: center bottom;
+    }
+    
+    #a h1 {
+        font-size: 32px;
+    }
+    
+    #a h2 {
+        font-size: 25px;
     }
     
     #c {
