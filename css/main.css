@@ -31,7 +31,7 @@ body {
     color: azure;
     padding: 10px;
     z-index: 500;
-    width: 500px;
+    max-width: 500px;
     position: relative;
 }
 
@@ -135,7 +135,7 @@ body {
 @media only screen and (max-width:800px) {
     
     .logo h1, .logo h2, .logo h3 {
-        font-size: 30px;
+        font-size: 60px;
     }
     
 }
