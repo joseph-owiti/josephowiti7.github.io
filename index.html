@@ -9,13 +9,13 @@
     <!-- Logo -->
     <link rel="shortcut icon" type="image/x-icon" href="images/logoblack.png"/>
      
-     
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">
 
      
-<!-- CSS -->
+    <!-- CSS -->
      
-<style type="text/css">
+    <style type="text/css">
     body {
         font-family: 'Share Tech', sans-serif;
         background-color: black;
@@ -151,7 +151,7 @@
     
 </style>
      
-<!--End CSS -->
+    <!--End CSS -->
 
 
  </head>
@@ -183,18 +183,17 @@
          var id = setInterval(frame, 40);
 
          function frame(){  
-          if(loading == 100) {
-           clearInterval(id);
-           window.open("home.html", "_self");
-          }
-          else {
-           loading = loading + 1;
-           if(loading == 90) {
-            preload.style.animation = "fadeout 3s ease";
-           }
-          }
+              if(loading == 100) {
+               clearInterval(id);
+               window.open("home.html", "_self");
+              }
+              else {
+               loading = loading + 1;
+               if(loading == 90) {
+                preload.style.animation = "fadeout 3s ease";
+               }
+              }
          }
-
 
         })();
 

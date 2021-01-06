@@ -316,20 +316,20 @@
         
         <div id="r" class="fadein">
         
-            <div class="container">
+            <div class="container" id="contact-form">
 
-                <form method="post" action="contact-form.php">
+                <form method="POST" action="https://formspree.io/f/moqpyvoe" target="_blank">
 
                     <label for="name">Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <input type="text" id="fname" name="Name" placeholder="Enter your name.." required>
 
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Your email address..">
+                    <input type="text" id="email" name="_replyto" placeholder="Enter your email address.." required>
 
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Write something.." style="height:110px"></textarea>
+                    <textarea id="message" name="message" placeholder="Enter your message.." style="height:110px" required></textarea>
 
-                    <input type="submit" name="submit" value="Send Message">
+                    <input type="submit" name="submit" value="Send Message" target="_top">
 
                 </form>
 
