@@ -568,6 +568,13 @@ colors {
 
 .subj::-webkit-scrollbar {width: 0 !important}
 
+#aboutme a {
+    color: #61892f;
+    text-shadow: 0.5px 0.5px 0px black;
+    position: relative;
+    text-decoration: underline;
+}
+
 
 #j p {
     margin: 0 auto 5px auto;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang ="en">
  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GK1P1F77NW"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -18,22 +18,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="images/seheader.jpg" />
     
-    <!-- Logo -->
     <link rel="shortcut icon" type="image/x-icon" href="images/logoblack.png"/>
-     
-    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
     <link href="css/main.css" rel="stylesheet" />
      
  </head>
-    <body id="body">
+ <body id="body">
      
     <div class="preload" id="preload"></div>
 
     <div class="logo">
-        <h3>Hi, my name is </h3>
+        <h3>Hi, my name is</h3>
         <h1>JOSEPH OWITI</h1>
         <h2>Welcome to my Website.</h2>
     </div>
@@ -42,28 +37,27 @@
         <div class = "loader-frame">
             <div class = "loader1" id = "loader1"></div>
             <div class = "loader2" id = "loader2"></div>
-                <img src="images/logowhite.png">
+            <img src="images/logowhite.png">
         </div>
     </div>
      
-    <!-- JS -->
     <script type="text/javascript">
         (function(){
-         var preload = document.getElementById("body");
-         var loading = 0;
-         var id = setInterval(frame, 20);
-         function frame(){  
-              if(loading == 100) {
-               clearInterval(id);
-               window.open("home.html", "_self");
-              }
-              else {
-               loading = loading + 1;
-               if(loading == 90) {
-                preload.style.animation = "fadeout 3s ease";
-               }
-              }
-         }
+             var preload = document.getElementById("body");
+             var loading = 0;
+             var id = setInterval(frame, 20);
+             function frame(){  
+                  if(loading == 100) {
+                   clearInterval(id);
+                   window.open("home.html", "_self");
+                  }
+                  else {
+                   loading = loading + 1;
+                   if(loading == 90) {
+                    preload.style.animation = "fadeout 3s ease";
+                   }
+                  }
+             }
         })();
     </script>
 
