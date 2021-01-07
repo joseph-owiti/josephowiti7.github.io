@@ -11,7 +11,7 @@
     grid-row-gap: 0px;
     grid-column-gap: 0px;
     grid-template-columns: repeat(1, 100%);
-    grid-auto-rows: 50px 620px 850px 650px 1150px 500px 250px;
+    grid-auto-rows: 50px 620px 900px 650px 1150px 500px 250px;
     grid-template-areas: 
     /*   * * * * *     *=200px */
         "b"
@@ -896,6 +896,7 @@ a.company:before {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -1298,7 +1299,7 @@ input[type=submit]:hover {
     
     #aboutme {
         max-width: 85%;
-        min-width: 400px;
+        min-width: 380px;
         height: 100%;
         margin: auto;
     }
@@ -1356,8 +1357,6 @@ input[type=submit]:hover {
         
     }
     
-
-    
     #m {
         width: 85%;
         height: 100%;
@@ -1380,7 +1379,7 @@ input[type=submit]:hover {
     }
     #expcontainer {
         width: 85%;
-        min-width: 350px;
+        min-width: 380px;
         margin: 10px auto;
     }
     
@@ -1415,7 +1414,7 @@ input[type=submit]:hover {
         margin: 0 auto;
         padding: 0px;
         width: 90%;
-        min-width: 400px;
+        min-width: 350px;
         display: grid;
         grid-row-gap:10px;
         grid-column-gap: 0px;
