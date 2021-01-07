@@ -706,7 +706,7 @@ colors {
         display: grid;
         width: 70%;
         min-width: 400px;
-        grid-row-gap: 20px;
+        grid-row-gap: 0px;
         grid-column-gap: 20px;
         grid-template-columns: repeat(1, 100%);
         grid-auto-rows: 260px;
