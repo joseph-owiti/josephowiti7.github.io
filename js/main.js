@@ -103,7 +103,6 @@ $('#popup__close').click(function(){
 });
 
 
-//SmoothScroll Script
         //Smooth Scroll Script
 $(document).ready(function(){
      $( document ).ready(function() {
