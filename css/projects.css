@@ -33,6 +33,7 @@
 #f {
     grid-area: f;
     width: 1200px;
+    max-width: 95%;
     margin: -50px auto -50px auto;
     z-index: 11;
     
@@ -73,7 +74,7 @@ body {
     background-color: silver;
     font-family: 'Share Tech', sans-serif;
     font-size: 15px;
-
+    margin: 0;
 }
 
 img {  
@@ -430,13 +431,29 @@ colors {
 
 /* F - PORTFOLIO */
 
+#f {
+    display: grid;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    grid-template-columns: repeat(1, 100%);
+    grid-auto-rows: 140px 85%;
+    grid-template-areas: 
+    /*   * * * * *     *=200px */
+        "f1"
+        "f2"
+        ;
+}
+
 #f1 {
     grid-area: f1;
 }
+
 #f2 {
     grid-area: f2;
     padding: 25px;
     display: grid;
+    width: 100%;
+    margin: 0 auto;
     grid-row-gap: 15px;
     grid-column-gap: 15px;
     grid-template-columns: repeat(3, 32.5%);
@@ -445,6 +462,8 @@ colors {
     /*   * * * * *     *=200px */
         "f21 f22 f23"
         ;
+    flex-wrap: wrap;
+
 }
 
 #f21 {
@@ -467,6 +486,8 @@ colors {
     box-shadow: 0 9px 6px -6px black;
     background-color: gainsboro;
 }
+
+
 
 .projol {
     
@@ -641,21 +662,21 @@ colors {
   /* For mobile phones: */
   
     #grid {
-    z-index: 10;
-    margin:0px auto 0px auto;
-    width:100%;
-    height:auto;
-    display: grid;
-    grid-row-gap: 0px;
-    grid-column-gap: 0px;
-    grid-template-columns: repeat(1, 100%);
-    grid-auto-rows: 50px 580px 1600px 250px;
-    grid-template-areas: 
-    /*   * * * * *     *=200px */
-        "b"
-        "a"
-        "f"
-        "z";
+        z-index: 10;
+        margin:0px auto 0px auto;
+        width:100%;
+        height:auto;
+        display: grid;
+        grid-row-gap: 0px;
+        grid-column-gap: 0px;
+        grid-template-columns: repeat(1, 100%);
+        grid-auto-rows: 50px 580px 1100px 250px;
+        grid-template-areas: 
+        /*   * * * * *     *=200px */
+            "b"
+            "a"
+            "f"
+            "z";
     }
     
     #header {
@@ -673,7 +694,6 @@ colors {
     }
     
     #f, #e, #z {
-    width:95%;
         padding: 10px
     }
     #b, #a, #z {
@@ -684,6 +704,8 @@ colors {
    
         padding: 0px 60px;
         display: grid;
+        width: 70%;
+        min-width: 400px;
         grid-row-gap: 20px;
         grid-column-gap: 20px;
         grid-template-columns: repeat(1, 100%);
@@ -696,6 +718,31 @@ colors {
             "f24" 
             "f25"
             ;
+    }
+    
+    .projol {
+    
+        height: 100%;
+        background-color: #222629;
+        opacity: 0.9;
+        z-index: 511;
+        position: absolute;
+        overflow: hidden;
+        width: 0;
+        transition: .5s ease;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    
+    
+    .popup-inner {
+        width: 80%;
     }
     
     

@@ -103,7 +103,8 @@ $('#popup__close').click(function(){
 });
 
 
-//Smooth Scroll Script
+//SmoothScroll Script
+        //Smooth Scroll Script
 $(document).ready(function(){
      $( document ).ready(function() {
       $("a").on('click', function(event) {
@@ -119,30 +120,34 @@ $(document).ready(function(){
       });
     }); 
 });
-$("#eriproj").click(function() {
+    
+    $("#eriproj").click(function() {
     $('html,body').animate({
         scrollTop: $("project.html#f25").offset().top},'slow');
 }); 
-$(".about").click(function() {
-    $('html,body').animate({
-        scrollTop: $("home.html#c").offset().top},'slow');
-});   
-$(".skills").click(function() {
-    $('html,body').animate({
-        scrollTop: $("home.html#d").offset().top},'slow');
-}); 
-$("#experience").click(function() {
-    $('html,body').animate({
-        scrollTop: $("home.html#g").offset().top},'slow');
-}); 
-$(".contact").click(function() {
-    $('html,body').animate({
-        scrollTop: $("home.html#h").offset().top},'slow');
-}); 
-$(".home").click(function() {
-    $('html,body').animate({
-        scrollTop: $("home.html").offset().top},'slow');
-});
+
+//$("#about").click(function() {
+//    $('html,body').animate({
+//        scrollTop: $("home.html#c").offset().top},'slow');
+//});   
+//$(".skills").click(function() {
+//    $('html,body').animate({
+//        scrollTop: $("home.html#d").offset().top},'slow');
+//}); 
+//$(".experience").click(function() {
+//    $('html,body').animate({
+//        scrollTop: $("home.html#g").offset().top},'slow');
+//}); 
+//$(".contact").click(function() {
+//    $('html,body').animate({
+//        scrollTop: $("home.html#h").offset().top},'slow');
+//}); 
+//$(".home").click(function() {
+//    $('html,body').animate({
+//        scrollTop: $("home.html").offset().top},'slow');
+//});
+    
+
 
 
                 

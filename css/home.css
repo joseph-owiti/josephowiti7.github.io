@@ -5,13 +5,13 @@
 #grid {
     z-index: 10;
     margin:0px auto 0px auto;
-    width:100%;
+    max-width:100%;
     height:auto;
     display: grid;
     grid-row-gap: 0px;
     grid-column-gap: 0px;
     grid-template-columns: repeat(1, 100%);
-    grid-auto-rows: 50px 620px 750px 600px 1350px 500px 250px;
+    grid-auto-rows: 50px 620px 850px 650px 1150px 500px 250px;
     grid-template-areas: 
     /*   * * * * *     *=200px */
         "b"
@@ -23,19 +23,22 @@
         "z";
 }
 
+#c, #h, #d, #g {
+    width: 1200px;
+}
+
 #b {
     grid-area: b;
 }
 
 #a {
     grid-area: a;
-    
-    
+ 
 }
 
 #c {
     grid-area: c;
-    max-width: 1200px;
+    max-width: 95%;
     margin: -50px auto 0px auto;
         
     background-color: rgb(224,224,224);
@@ -52,19 +55,18 @@
     grid-row-gap: 0px;
     grid-column-gap: 0px;
     grid-template-columns: repeat(1, 100%);
-    grid-auto-rows: 100px 330px 250px;
+    grid-auto-rows: 100px 700px;
     grid-template-areas: 
     /*   * * * * *     *=200px */
         "i"
         "j"
-        "k"
         ;
 
 }
 
 #h {
     grid-area: h;
-    max-width: 1200px;
+    max-width: 95%;
     margin: 0px auto;
     
     background-color: rgb(224,224,224);
@@ -76,7 +78,7 @@
     grid-row-gap: 25px;
     grid-column-gap: 0px;
     grid-template-columns: repeat(5, 20%);
-    grid-auto-rows: 100px 360px;
+    grid-auto-rows: 100px 370px;
     grid-template-areas: 
     /*   * * * * *     *=200px */
         "l l l l l"
@@ -87,7 +89,7 @@
 
 #d {
     grid-area: d;
-    max-width: 1200px;
+    max-width: 95%;
     margin: 0px auto;    
     background-color: rgb(224,224,224);
     padding: 60px;
@@ -99,7 +101,7 @@
     grid-row-gap: 0px;
     grid-column-gap: 20px;
     grid-template-columns: repeat(1, 100%);
-    grid-auto-rows: 100px 550px;
+    grid-auto-rows: 100px 900px;
     grid-template-areas: 
     /*   * * * * *     *=200px */
         "o"
@@ -109,7 +111,7 @@
 
 #g {
     grid-area: g;
-    max-width: 1200px;
+    max-width: 95%;
     margin: 0px auto -50px auto;
         
     background-color: rgb(224,224,224);
@@ -119,7 +121,6 @@
     border-bottom: 4px solid silver;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    
     z-index: 7;
     height: auto;
     display: grid;
@@ -436,74 +437,6 @@ colors {
 
 
 
-/* Responsive Nav Bar */
-
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav .dropbtn {display: none;}
-  .topnav a.icon{
-    float: right;
-    display: block;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-  }
-}
-
-.icon-content, .sticky .icon-content {
-    display: none;
-    position: absolute;
-    background-color: #61892f;
-    margin-top: 50px;
-    color: black;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 100;
-}
-
-.icon-content a, .sticky .icon-content a {
-    color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-        text-align: center;
-        width: 100%;
-}
-
-.icon-content a:hover, .sticky .icon-content a:hover {
-    background-color: rgba(34, 38, 41, 0.4);
-    color: whitesmoke;
-    border-top: 1px solid #222629;
-   
-}
-
-.show, .sticky .show {
-    display: block;
-    width:100%;
-    right: 0;
-    z-index: 200;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
-}
-
-.sticky .show {
-    margin-top: 40px;
-}
-
-.sticky {
-    position: fixed;
-    color: #222629;
-    top: 0;
-    width: 100%;
-    height: 40px;
-    background-color: #61892f;
-    border-bottom: 1px solid #222629;
-    transition: 1s ease-out;
-    box-shadow: 0 6px 10px -6px #222629;
-
-}
-
-
 
 /* A - HEADING */
 
@@ -583,16 +516,50 @@ colors {
 
 #j {
     grid-area: j;
-    padding: 25px 80px;
-    overflow: scroll;
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
-            box-shadow: inset -0px -10px 9px -13px gray,
-         -0px -10px 9px -13px gray;
-
 
 }
-#j::-webkit-scrollbar {width: 0 !important}
+
+#aboutme {
+    max-width: 85%;
+    min-width: 650px;
+    height: 95%;
+    margin: auto;
+}
+.subj2 {
+    background-color: silver;
+    padding: 25px;
+    float: left;
+    margin: 0.5%;
+    height: 38%;
+    width: 34%;
+}
+
+.subj2 img {
+    object-fit: cover;
+/*    border: 1px solid #222629;*/
+    border-radius: 5px;
+}
+
+.image2 {
+    margin-top: 10%;
+}
+
+
+.subj {
+    background-color: lightgray;
+    padding: 10px;
+    margin: 0.5%;
+    float: left;
+    height: 50%;
+    width: 64%;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+.subj::-webkit-scrollbar {width: 0 !important}
 
 
 #j p {
@@ -614,80 +581,6 @@ colors {
     list-style-type: square;
 }
 
-#k {
-    grid-area: k;
-    display: grid;
-    margin: auto;
-    width: 680px;
-    padding: 40px 20px;
-    grid-column-gap: 12px;
-    grid-template-columns: repeat(4, 150px);
-    grid-auto-rows: 150px;
-    grid-template-areas: 
-        "s1 s2 s3 s4";
-
-}
-
-#s1 {
-    grid-area: s1;
-}
-#s2 {
-    grid-area: s2;
-}
-#s3 {
-    grid-area: s3;
-}
-#s4 {
-    grid-area: s4;
-}
-
-
-.aboverlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(34, 38, 41, 0.3);
-    z-index: 50;
-    border-radius: 100%;
-}
-
-.aboverlay:hover {
-    opacity: 0;
-    transition: 0.4s ease-out;
-    
-}
-
-.aboutpic {
-    
-   border: 1px solid black;
-    z-index: 40;   
-    border-radius: 100%;
-}
-
-.aboutpic img {
-    object-position: center;
-    border-radius: 100%;
-
-}
-
-#s3 img {
-    object-position: bottom;
-}
-
-.aboutpic :before {
-  content:"";
-  z-index: -1;
-  position: absolute;
-  bottom: -60%;
-  width: inherit;
-  height: inherit;
-  border-radius: 40%;
-  background: rgba(0,0,0,.55);  
-  transform:  scaleX(0.35) scaleY(0.03);
-  filter: blur(35px);
-}
-
-
 
 
 
@@ -699,23 +592,19 @@ colors {
 
 #m {
     grid-area: m;
-    padding: 40px;
-    padding-right: 60px;
     
     display: flex;
-    justify-content:;
+    justify-content: center;
     align-items: flex-end;
     flex-direction: column;
-    
 }
 
 #n {
     grid-area: n;
     padding: 0px;
     height: auto;
-    
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     
@@ -723,16 +612,18 @@ colors {
 }
 
 #explogo {
-    width: 190px;
-    height: 190px;
+    width: 180px;
+    height: 180px;
     border-radius: 15px;
     background-color: #222629;
+    right: 50px;
       
 }
 
 #expcontainer {
     position: relative;
     width: 90%;
+    min-width: 380px;
     padding: 10px;
     overflow: scroll;
     top: 0;
@@ -970,7 +861,7 @@ a.company:before {
     grid-row-gap:10px;
     grid-column-gap: 0px;
     grid-template-columns: repeat(2, 35%);
-    grid-auto-rows: 200px;
+    grid-auto-rows: auto;
     justify-content: center;
     grid-template-areas:
         "r1 r1"
@@ -978,6 +869,7 @@ a.company:before {
         "r4 r5"
         "r6 r7"
         "r8 r9";
+    
 }
 
 #r1 {grid-area:r1;}
@@ -993,6 +885,7 @@ a.company:before {
 .skillsect {
     padding: 15px;
     background-color: lightgray;
+
 }
 
 #r1 {
@@ -1012,10 +905,6 @@ a.company:before {
     border-radius: 100%;
     background-color: rgb(34, 38, 41);
     padding: 40px;
-}
-
-#r1 .sklogo {
-    margin: auto;
 }
 
 .sklogo img {
@@ -1053,7 +942,8 @@ a.company:before {
 }
 
 #q p {
-    width: 70%;
+    width: 80%;
+    min-width: 200px;
 }
 
 .pie-wrapper {
@@ -1182,6 +1072,7 @@ a.company:before {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
 }
 
 #s {
@@ -1194,7 +1085,8 @@ a.company:before {
 }
 
 #g .header h1 {
-    width: 80%;
+    width: 60%;
+    min-width: 200px;
     color: #222629;
     margin-bottom: 10px;
 }
@@ -1202,8 +1094,11 @@ a.company:before {
 #s h2 {
     width: 100%;
     height: auto;
+    padding: 10px;
     text-align: center;
     width: 60%;
+    min-width: 150px;
+
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -1255,13 +1150,13 @@ input[type=submit]:hover {
     font-family: 'Share Tech', sans-serif;
     z-index: 10;
     margin:0px auto 0px auto;
-    max-width: 80%;
-    min-width: 80%;
+    width: 80%;
+    min-width: 300px;
     height: 100%;
     text-align: center;
     justify-content: center;
-    padding-left: 5%;
-    padding-top: 20px;    
+    padding-left: 10%;
+    padding-top: 40px;    
 }
 
 .social {
@@ -1319,10 +1214,6 @@ input[type=submit]:hover {
     color: white;
 }
 
-.fa-instagram:hover {
-    color: rgb(143,65,153);
-}
-
 .fa-facebook:hover {
     color: rgb(59,86,157);
 }
@@ -1347,8 +1238,6 @@ input[type=submit]:hover {
     font-variant: small-caps;
 }
 
-
-
 @media only screen and (max-width:800px) {
   /* For mobile phones: */
   
@@ -1361,7 +1250,7 @@ input[type=submit]:hover {
     grid-row-gap: 0px;
     grid-column-gap: 0px;
     grid-template-columns: repeat(1, 100%);
-    grid-auto-rows: 50px 580px 950px 800px 1300px 770px 250px;
+    grid-auto-rows: 50px 580px 700px 850px 1200px 800px 250px;
     grid-template-areas: 
     /*   * * * * *     *=200px */
         "b"
@@ -1372,14 +1261,6 @@ input[type=submit]:hover {
         "g"
         "z";
 }
-    
-    #b, #a, #c, #h, #d, #g, #z {
-    width:95%;
-    }
-    
-    #b, #a, #z {
-        width: 100%;
-    }
     
     #header {
         background-attachment: inherit;
@@ -1395,6 +1276,9 @@ input[type=submit]:hover {
         font-size: 25px;
     }
     
+    
+    /* about */
+    
     #c {
         padding: 10px;
         
@@ -1404,39 +1288,63 @@ input[type=submit]:hover {
         grid-row-gap: 0px;
         grid-column-gap: 0px;
         grid-template-columns: repeat(1, 100%);
-        grid-auto-rows: 100px 350px 400px;
+        grid-auto-rows: 100px 550px;
         grid-template-areas: 
         /*   * * * * *     *=200px */
             "i"
             "j"
-            "k"
             ;
     }
     
-    
-    #k {
+    #aboutme {
+        max-width: 85%;
+        min-width: 400px;
+        height: 100%;
         margin: auto;
-        height: 450px;
-        max-width: 400px;
-        padding: 40px 36px;
-        grid-row-gap: 20px;
-        grid-column-gap: 20px;
-        grid-template-columns: repeat(2, 150px);
-        grid-auto-rows: 150px;
-        grid-template-areas: 
-            "s1 s2"
-            "s3 s4";
-        
+    }
+    
+    .subj2 {
+        background-color: silver;
+        padding: 5px;
+        float: left;
+        margin: 0.5%;
+        height: 38%;
+        width: 34%;
     }
 
+    .subj2 img {
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .image2 {
+        margin-top: 15%;
+    }
+
+
+    .subj {
+        background-color: lightgray;
+        padding: 10px;
+        margin: 1% 0.6%;
+        float: left;
+        height: 50%;
+        width: 63%;
+        overflow-y: scroll;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+    }
+
+
   
+    /* experience */
+    
     #h {  
         
         display: grid;
         grid-row-gap: 0px;
         grid-column-gap: 0px;
         grid-template-columns: repeat(1, 100%);
-        grid-auto-rows: 100px 300px 300px;
+        grid-auto-rows: 100px 230px 350px;
         grid-template-areas: 
             /*   * * * * *     *=200px */
                 "l"
@@ -1444,22 +1352,49 @@ input[type=submit]:hover {
                 "n"
                 ;
         
-        height: 800px;
         padding: 20px;
         
     }
-    #m #explogo {
+    
+
+    
+    #m {
+        width: 85%;
+        height: 100%;
         margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    
+    #explogo {
+            
+        width: 180px;
+        height: 180px;
+        border-radius: 15px;
+        background-color: #222629;
+        right: 0;
+        margin-top: 40px;
+        margin-bottom: 0;
     }
     #expcontainer {
-        width: 100%;
-        margin: auto;
+        width: 85%;
+        min-width: 350px;
+        margin: 10px auto;
     }
     
     .popup {
         z-index: 100;
     }
     
+    .popup-inner {
+        width: 80%;
+    }
+    
+    
+    
+    /* skills */
     
     #d {
         
@@ -1468,7 +1403,7 @@ input[type=submit]:hover {
         grid-row-gap: 0px;
         grid-column-gap: 0px;
         grid-template-columns: repeat(1, 100%);
-        grid-auto-rows: 150px 1050px;
+        grid-auto-rows: 120px 980px;
         grid-template-areas: 
         /*   * * * * *     *=200px */
             "o"
@@ -1477,12 +1412,15 @@ input[type=submit]:hover {
     }
     #q {
          grid-area: q;
+        margin: 0 auto;
         padding: 0px;
+        width: 90%;
+        min-width: 400px;
         display: grid;
         grid-row-gap:10px;
         grid-column-gap: 0px;
         grid-template-columns: repeat(2, 50%);
-        grid-auto-rows: 200px;
+        grid-auto-rows: auto;
         justify-content: center;
         grid-template-areas:
         "r1 r1"
@@ -1490,12 +1428,15 @@ input[type=submit]:hover {
         "r4 r5"
         "r6 r7"
         "r8 r9";
-        
+                
     }
     #r1 {
         padding: 0px;
+        height: auto;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
     }
-    .pie-wrapper {margin-right: 0px;}
+    .pie-wrapper {margin: 5px;}
     .skright {
         padding: 10px;
     }
@@ -1504,25 +1445,34 @@ input[type=submit]:hover {
     }
     #q p {
         width: 100%;
+        padding: 11px;
     }
 
+    
+    /* contact */
     
     #g {
         display: grid;
         grid-row-gap: 0px;
         grid-column-gap: 0px;
-        grid-template-columns: repeat(1, 100%);
-        grid-auto-rows: 130px 220px 400px;
+        grid-template-columns: repeat(5, 20%);
+        grid-auto-rows: auto auto auto;
         grid-template-areas: 
         /*   * * * * *     *=200px */
-            "s"
-            "t"
-            "r"
+            "s s s s s"
+            "t t t t t"
+            "r r r r r"
             ;
         
         padding: 10px;
         float: left;
     }
+    
+    #contact {
+        padding-left: 5%;
+        padding-top: 25px;
+    }
+    
     #inbox {
         float: left;
         bottom: 0;
@@ -1530,20 +1480,14 @@ input[type=submit]:hover {
         background-color: white;
         width: 100%;
         left: 0;
-        margin-top: 10px;
+        margin-top: 0px;
     }
     #r {
         width: 85%;
         margin: auto;
     }
 
-
-}
-
-
-
-
-
+ }
 
 
 
