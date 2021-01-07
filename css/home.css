@@ -150,14 +150,17 @@
 /*    object-fit: cover;*/
 }
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     color:#111;
     background-color: silver;
     font-family: 'Share Tech', sans-serif;
     font-size: 17px;
     line-height: 25px;
-    margin: 0;
-    padding: 0;
 
 }
 
@@ -1379,7 +1382,7 @@ input[type=submit]:hover {
         margin-bottom: 0;
     }
     #expcontainer {
-        width: 95%;
+        width: 100%;
         min-width: 350px;
         margin: 10px auto;
     }
@@ -1444,15 +1447,24 @@ input[type=submit]:hover {
         padding: 10px;
     }
     
-    #q h1 {
-        padding: 6%;
+    .skleft h1 {
+        padding: 5% 0% 0% 20%;
     }
     
-    #q p {
+    .skright h1 {
+        padding: 5% 20% 0 0;
+    }
+    
+    .skleft p {
         width: 80%;
-        padding: 0% 10%;
+        padding: 0% 0% 0% 20%;
         height: auto;
-        border: 1px solid black;
+    }
+    
+    .skright p {
+        width: 80%;
+        padding: 0 20% 0 0;
+        height: auto;
     }
 
     
