@@ -702,10 +702,10 @@ colors {
     
     #f2 {
    
-        padding: 0px 60px;
         display: grid;
-        width: 70%;
-        min-width: 400px;
+        width: 60%;
+        margin: 0 auto;
+        min-width: 350px;
         grid-row-gap: 20px;
         grid-column-gap: 0px;
         grid-template-columns: repeat(1, 100%);
