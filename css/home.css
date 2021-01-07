@@ -156,6 +156,8 @@ body {
     font-family: 'Share Tech', sans-serif;
     font-size: 17px;
     line-height: 25px;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -545,7 +547,7 @@ colors {
 }
 
 .image2 {
-    margin-top: 10%;
+    margin-top: 11%;
 }
 
 
@@ -1318,7 +1320,7 @@ input[type=submit]:hover {
     }
 
     .image2 {
-        margin-top: 15%;
+        margin-top: 20%;
     }
 
 
@@ -1377,7 +1379,7 @@ input[type=submit]:hover {
         margin-bottom: 0;
     }
     #expcontainer {
-        width: 90%;
+        width: 95%;
         min-width: 350px;
         margin: 10px auto;
     }
@@ -1448,8 +1450,9 @@ input[type=submit]:hover {
     
     #q p {
         width: 80%;
-        padding: 6%;
+        padding: 0% 10%;
         height: auto;
+        border: 1px solid black;
     }
 
     
