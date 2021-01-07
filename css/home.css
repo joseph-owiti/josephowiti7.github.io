@@ -1386,7 +1386,7 @@ input[type=submit]:hover {
         max-width: 550px;
         min-width: 360px;
         margin: 10px auto;
-        padding: 0px;
+        padding: 5px 15px 5px 5px;
     }
     
     .popup {
@@ -1459,13 +1459,13 @@ input[type=submit]:hover {
     
     .skleft p {
         width: 80%;
-        padding: 0% 0% 0% 21%;
+        padding: 0% 0% 0% 23%;
         height: auto;
     }
     
     .skright p {
         width: 80%;
-        padding: 0 21% 0 0;
+        padding: 0 23% 0 0;
         height: auto;
     }
 
