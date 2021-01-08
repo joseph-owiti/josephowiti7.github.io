@@ -91,9 +91,28 @@ for (i = 0; i < coll.length; i++) {
 //POPUP Script 
 $('#buttonapm').click(function(){ 
     if(!$('#iframe').length) {
-            $('#iframeHolder').html('<iframe class="apm-youtube" width="100%" height="100%" src="https://www.youtube.com/embed/sgd4GJD2C68?autoplay=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+        $('#iframeHolder').html('<iframe class="apm-youtube" width="100%" height="100%" src="https://www.youtube.com/embed/sgd4GJD2C68?autoplay=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
     }
 });   
+
+$('#btnf21').click(function(){ 
+    if(!$('#iframe').length) {
+        $('#iframeHolder').html('<div id="iframe" class="proj_info" width="100%" height="100%"><h1>senior capstone...</h1><ul><li>You will find me playing volleyball, soccer or lacrosse, but never basketball</li><li>I enjoy going on hikes and roadtrips</li><li>I enjoy games like Settlers of Catan and Avalon</li><li>I am a big fan of the Marvel Cinematic Universe movies</li><li>I love to design and create things</li</ul></div>');
+    }
+});
+
+$('#btnf22').click(function(){ 
+    if(!$('#iframe').length) {
+        $('#iframeHolder').html('<div id="iframe" class="proj_info" width="100%" height="100%"><h1>amazon web services...</h1><ul><li>You will find me playing volleyball, soccer or lacrosse, but never basketball</li><li>I enjoy going on hikes and roadtrips</li><li>I enjoy games like Settlers of Catan and Avalon</li><li>I am a big fan of the Marvel Cinematic Universe movies</li><li>I love to design and create things</li</ul></div>');
+    }
+}); 
+
+$('#btnf23').click(function(){ 
+    if(!$('#iframe').length) {
+        $('#iframeHolder').html('<div id="iframe" class="proj_info" width="100%" height="100%"><h1>javascript d3...</h1>       <ul><li>You will find me playing volleyball, soccer or lacrosse, but never basketball</li><li>I enjoy going on hikes and roadtrips</li><li>I enjoy games like Settlers of Catan and Avalon</li><li>I am a big fan of the Marvel Cinematic Universe movies</li><li>I love to design and create things</li</ul></div>');
+    }
+});  
+
 $('#popup__close').click(function(){
     $('.apm-youtube').each(function(){
         this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
@@ -103,7 +122,7 @@ $('#popup__close').click(function(){
 });
 
 
-        //Smooth Scroll Script
+//Smooth Scroll Script
 $(document).ready(function(){
      $( document ).ready(function() {
       $("a").on('click', function(event) {
@@ -120,7 +139,7 @@ $(document).ready(function(){
     }); 
 });
     
-    $("#eriproj").click(function() {
+$("#eriproj").click(function() {
     $('html,body').animate({
         scrollTop: $("project.html#f25").offset().top},'slow');
 }); 

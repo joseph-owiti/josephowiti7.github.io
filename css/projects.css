@@ -73,7 +73,8 @@ body {
     color:#111;
     background-color: silver;
     font-family: 'Share Tech', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
+    line-height: 25px;
 
 }
 
@@ -505,7 +506,7 @@ colors {
 
 .proj p {
     position: relative;
-    height: 50%;
+    height: auto;
     width: 100%;
     padding: 15px;
     text-align: center;
@@ -572,12 +573,26 @@ colors {
     align-items: center;
     flex-direction: column;
     overflow: visible;
-    
   }
 
 #iframeHolder {
     width: 100%;
     height: 100%;
+}
+
+.proj_info {
+    padding: 20px;
+}
+
+.proj_info h1 {
+    font-size: 30px;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+}
+
+.proj_info ul {
+    list-style: square;
+    margin-left: 20px;
 }
 
 .popup:target {
