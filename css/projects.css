@@ -601,6 +601,14 @@ colors {
     margin-left: 20px;
 }
 
+.proj_info a {
+    color: #61892f;
+    text-shadow: 0.3px 0.3px 0px black; 
+    position: relative;
+    text-decoration: underline;
+}
+
+
 .popup:target {
     visibility: visible;
       opacity: 1; }

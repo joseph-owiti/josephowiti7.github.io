@@ -559,7 +559,7 @@ colors {
 
 #aboutme a {
     color: #61892f;
-    text-shadow: 0.5px 0.5px 0px black;
+    text-shadow: 0.3px 0.3px 0px black;
     position: relative;
     text-decoration: underline;
 }
