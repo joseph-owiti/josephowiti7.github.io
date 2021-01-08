@@ -1231,7 +1231,6 @@ input[type=submit]:hover {
 }
 
 @media only screen and (max-width:800px) {
-  /* For mobile phones: */
   
     #grid {
     z-index: 10;
@@ -1310,9 +1309,8 @@ input[type=submit]:hover {
     }
 
     .image2 {
-        margin-top: 20%;
+        margin-top: 17%;
     }
-
 
     .subj {
         background-color: lightgray;
@@ -1478,6 +1476,7 @@ input[type=submit]:hover {
     
     #contact {
         padding-left: 5%;
+        width: 70%;
         padding-top: 25px;
     }
     
