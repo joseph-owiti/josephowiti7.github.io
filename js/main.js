@@ -97,19 +97,19 @@ $('#buttonapm').click(function(){
 
 $('#btnf21').click(function(){ 
     if(!$('#iframe').length) {
-        $('#iframeHolder').html('<div id="iframe" class="proj_info" width="100%" height="100%"><h1>senior capstone...</h1><ul><li>You will find me playing volleyball, soccer or lacrosse, but never basketball</li><li>I enjoy going on hikes and roadtrips</li><li>I enjoy games like Settlers of Catan and Avalon</li><li>I am a big fan of the Marvel Cinematic Universe movies</li><li>I love to design and create things</li</ul></div>');
+        $('#iframeHolder').html('<div id="iframe" class="proj_info" width="100%" height="100%"><h1>Software Engineering Capstone</h1><ul><li>You will find me playing volleyball, soccer or lacrosse, but never basketball</li><li>I enjoy going on hikes and roadtrips</li><li>I enjoy games like Settlers of Catan and Avalon</li><li>I am a big fan of the Marvel Cinematic Universe movies</li><li>I love to design and create things</li</ul></div>');
     }
 });
 
 $('#btnf22').click(function(){ 
     if(!$('#iframe').length) {
-        $('#iframeHolder').html('<div id="iframe" class="proj_info" width="100%" height="100%"><h1>amazon web services...</h1><ul><li>You will find me playing volleyball, soccer or lacrosse, but never basketball</li><li>I enjoy going on hikes and roadtrips</li><li>I enjoy games like Settlers of Catan and Avalon</li><li>I am a big fan of the Marvel Cinematic Universe movies</li><li>I love to design and create things</li</ul></div>');
+        $('#iframeHolder').html('<div id="iframe" class="proj_info" width="100%" height="100%"><h1>AWS CloudFormation</h1><ul><li>You will find me playing volleyball, soccer or lacrosse, but never basketball</li><li>I enjoy going on hikes and roadtrips</li><li>I enjoy games like Settlers of Catan and Avalon</li><li>I am a big fan of the Marvel Cinematic Universe movies</li><li>I love to design and create things</li</ul></div>');
     }
 }); 
 
 $('#btnf23').click(function(){ 
     if(!$('#iframe').length) {
-        $('#iframeHolder').html('<div id="iframe" class="proj_info" width="100%" height="100%"><h1>javascript d3...</h1>       <ul><li>You will find me playing volleyball, soccer or lacrosse, but never basketball</li><li>I enjoy going on hikes and roadtrips</li><li>I enjoy games like Settlers of Catan and Avalon</li><li>I am a big fan of the Marvel Cinematic Universe movies</li><li>I love to design and create things</li</ul></div>');
+        $('#iframeHolder').html('<div id="iframe" class="proj_info" width="100%" height="100%"><h1>Force-Directed Network Graph</h1><ul><li>You will find me playing volleyball, soccer or lacrosse, but never basketball</li><li>I enjoy going on hikes and roadtrips</li><li>I enjoy games like Settlers of Catan and Avalon</li><li>I am a big fan of the Marvel Cinematic Universe movies</li><li>I love to design and create things</li</ul></div>');
     }
 });  
 
@@ -117,8 +117,9 @@ $('#popup__close').click(function(){
     $('.apm-youtube').each(function(){
         this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
     });
+        $("#iframe").remove();
+
     $('html,body').animate({scrollTop: $("home.html#f").offset().top},'slow');
-    $("#iframe").remove();
 });
 
 
