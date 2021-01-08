@@ -583,7 +583,12 @@ colors {
 
 .proj_info {
     padding: 20px;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
 }
+
+.proj_info::-webkit-scrollbar {width: 0 !important}
 
 .proj_info h1 {
     font-size: 30px;

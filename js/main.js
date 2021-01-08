@@ -97,7 +97,7 @@ $('#buttonapm').click(function(){
 
 $('#btnf21').click(function(){ 
     if(!$('#iframe').length) {
-        $('#iframeHolder').html('<div id="iframe" class="proj_info" width="100%" height="100%"><h1>Software Engineering Capstone</h1><ul><li>You will find me playing volleyball, soccer or lacrosse, but never basketball</li><li>I enjoy going on hikes and roadtrips</li><li>I enjoy games like Settlers of Catan and Avalon</li><li>I am a big fan of the Marvel Cinematic Universe movies</li><li>I love to design and create things</li</ul></div>');
+        $('#iframeHolder').html('<div id="iframe" class="proj_info" width="100%" height="100%"><h1>Software Engineering Capstone</h1><ul><li>Project Ongoing</li><li>Focussed on building a Machine Learning framework</li><li>Tools: Python Libraries, Visual Studios, GitHub, Microsoft Office</li><li>Learned data collection, analysis, formating, and storage methods</li><li>Project Management tools: Atlassian (Confluence & Trello)</li><li>Additional skills gained: extensive research, teamwork, virtual team collaboration and communication</li</ul></div>');
     }
 });
 
