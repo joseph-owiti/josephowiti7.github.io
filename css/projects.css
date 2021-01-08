@@ -1,5 +1,3 @@
-/* Portfolio CSS-GRID File */
-
 /* STRUCTURE */
 
 #grid {
@@ -61,8 +59,6 @@
 }
 
 /* END STRUCTURE */
-
-
 
 
 
@@ -205,8 +201,6 @@ colors {
     border-top: 1px solid #222629;
 }
 
-
-
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
@@ -288,9 +282,6 @@ colors {
     transition: 5s ease-out;
 }
 
-
-
-
 /* Responsive Nav Bar */
 
 @media screen and (max-width: 600px) {
@@ -315,7 +306,6 @@ colors {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 100;
 }
-
 
 .icon-content a, .sticky .icon-content a {
     color: black;
@@ -360,10 +350,6 @@ colors {
 }
 
 
-
-
-
-
 /* A - HEADING */
 
 #a {
@@ -406,10 +392,6 @@ colors {
 }
 
 
-
-
-
-
 /* MAIN UNIVERSAL */
 
 .header {
@@ -428,9 +410,6 @@ colors {
     padding: 15px;
     text-align: center;
 }
-
-
-
 
 
 /* F - PORTFOLIO */
@@ -490,8 +469,6 @@ colors {
     box-shadow: 0 9px 6px -6px black;
     background-color: gainsboro;
 }
-
-
 
 .projol {
     
@@ -639,9 +616,6 @@ colors {
 }
 
 
-
-
-
 /* Z - FOOTER */
 
 #z {
@@ -658,8 +632,6 @@ colors {
     margin-top: 10px;
     font-variant: small-caps;
 }
-
-
 
 
 @media only screen and (max-width:800px) {
