@@ -525,7 +525,7 @@ colors {
     margin: auto;
 }
 .subj2 {
-    background-color: silver;
+    background-color: lightgray;
     padding: 25px;
     float: left;
     margin: 0.5%;
@@ -559,7 +559,7 @@ colors {
 
 #aboutme a {
     color: #61892f;
-    text-shadow: 0.3px 0.3px 0px black;
+    text-shadow: 0.5px 0.5px 0px black;
     position: relative;
 }
 
@@ -735,6 +735,7 @@ a.company:before {
 .expcontent .explink {
     padding: 8px 8px;
     background-color: rgb(34, 38, 41);
+    border: 1px solid #86c232;
     color: #86c232;
     border-radius: 7px;
     margin-top: 15px;
@@ -1203,16 +1204,16 @@ input[type=submit]:hover {
     color: gainsboro;
 }
 
-.fa-envelope:hover {
-    color: rgb(211,90,79);
-}
-
 .fa-codepen:hover {
     color: white;
 }
 
 .fa-facebook:hover {
     color: rgb(59,86,157);
+}
+
+.fa-instagram:hover {
+    color: rgb(211,90,79);
 }
 
 
