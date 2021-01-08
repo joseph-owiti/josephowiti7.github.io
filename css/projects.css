@@ -604,10 +604,33 @@ colors {
 .proj_info a {
     color: #61892f;
     text-shadow: 0.3px 0.3px 0px black; 
-    position: relative;
+}
+
+.proj_info a:hover {
     text-decoration: underline;
 }
 
+#team_graph {
+    padding: 8px 8px;
+    background-color: rgb(34, 38, 41);
+    color: #86c232;
+    border: 2px solid #86c232;
+    border-radius: 7px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-weight: 550;
+    bottom: 0;
+    right: 0;
+    float: right;
+    text-decoration: none;
+}
+
+#team_graph:hover {
+    background-color: #86c232;
+    color: rgb(34, 38, 41);
+    border: 1px solid rgb(34, 38, 41);
+    text-decoration: none;
+}
 
 .popup:target {
     visibility: visible;

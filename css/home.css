@@ -561,6 +561,9 @@ colors {
     color: #61892f;
     text-shadow: 0.3px 0.3px 0px black;
     position: relative;
+}
+
+#aboutme a:hover {
     text-decoration: underline;
 }
 

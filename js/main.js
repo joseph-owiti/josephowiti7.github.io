@@ -109,7 +109,7 @@ $('#btnf22').click(function(){
 
 $('#btnf23').click(function(){ 
     if(!$('#iframe').length) {
-        $('#iframeHolder').html('<div id="iframe" class="proj_info" width="100%" height="100%"><h1>Force-Directed Network Graph</h1><ul><li>You will find me playing volleyball, soccer or lacrosse, but never basketball</li><li>I enjoy going on hikes and roadtrips</li><li>I enjoy games like Settlers of Catan and Avalon</li><li>I am a big fan of the Marvel Cinematic Universe movies</li><li>I love to design and create things</li</ul></div>');
+        $('#iframeHolder').html('<div id="iframe" class="proj_info" width="100%" height="100%"><h1>Force-Directed Network Graph</h1><ul><li>Project still in progress</li><li>Developing and designing a force-directed network graph featuring the employees of Elder Research</li><li>Tools: Javascript, HTML, CSS, JSON, <a href="https://d3js.org/" target="_blank">Data-Driven Documents (D3.js)</a></li><li>Key Features: pop-up display with employee descriptions, node "highlight neighbor" functionality on hover, navigation sidebar with toggles controlling node link and unlink functionality</li><li>When complete, the project can be viewed on the corporate website using button below</li</ul><a class="view_proj" id="team_graph" href="https://www.elderresearch.com/about-us/our-team/" target="_blank">View Project</a></div>');
     }
 });  
 
@@ -139,7 +139,6 @@ $(document).ready(function(){
       });
     }); 
 });
-    
 $("#eriproj").click(function() {
     $('html,body').animate({
         scrollTop: $("project.html#f25").offset().top},'slow');
