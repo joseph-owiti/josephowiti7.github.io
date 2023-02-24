@@ -30,7 +30,6 @@
     <div class="logo">
         <h3>Hi, my name is</h3>
         <h1>JOSEPH OWITI</h1>
-        <h2>A new website is under construction!</h2>
     </div>
 
     <div id="loader">
@@ -40,6 +39,7 @@
             <img src="images/logowhite.png">
         </div>
     </div>
+
      
     <script type="text/javascript">
         (function(){
@@ -47,19 +47,25 @@
              var loading = 0;
              var id = setInterval(frame, 20);
              function frame(){  
-                  if(loading == 100) {
+                  if(loading == 140) {
                    clearInterval(id);
-                   window.open("home.html", "_self");
+                   window.open("./home", "_self");
                   }
                   else {
                    loading = loading + 1;
-                   if(loading == 90) {
-                    preload.style.animation = "fadeout 3s ease";
+                   if(loading == 125) {
+                    preload.style.animation = "fadeout 4s ease";
                    }
                   }
              }
         })();
     </script>
+
+
+    <div class="message">
+        <h2>A new website is under construction and is</h2>
+        <h1>COMING SOON!</h1>
+    </div>
 
  </body>
 </html>
